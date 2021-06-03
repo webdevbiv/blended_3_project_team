@@ -4,9 +4,19 @@
  */
 
 // Сброс стилей reset.
-@import './reset';
+@import './base/reset';
 // Шрифты Titan One Normal 400; DM Sans Normal 400, 500, 700.
-@import './fonts';
+@import './base/fonts';
+// Стили для отладки.
+@import './base/dev-tools';
+//Контейнеры для секций.
+@import './base/container';
+
+//Переменные и цвета.
+@import './utils/variables';
+
+//Стили для компонентов.
+@import './components/body';
 
 // Стили для файла с примером HTML-фрагмента
 @import './example';
