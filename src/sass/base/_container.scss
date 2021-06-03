@@ -6,22 +6,22 @@
   margin-right: auto;
   //background-color: aqua;
 
-  @media screen and (min-width: 480px) {
-    max-width: 480px;
-    padding-left: 15px;
-    padding-right: 15px;
+  @media screen and (min-width: 320px) {
+    max-width: 320px;
+    padding-left: 20px;
+    padding-right: 20px;
     // background-color: olive;
   }
   @media screen and (min-width: 768px) {
     max-width: 768px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 34px;
+    padding-right: 34px;
     // background-color: lightcoral;
   }
   @media screen and (min-width: 1200px) {
     max-width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 115px;
+    padding-right: 115px;
     // background-color: blueviolet;
   }
 }
