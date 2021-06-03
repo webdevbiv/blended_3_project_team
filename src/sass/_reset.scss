@@ -149,8 +149,6 @@ html {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-
-  transition: opacity 500ms var(--btn-sh-function), visibility 500ms var(--btn-sh-function);
 }
 
 .white-space {
