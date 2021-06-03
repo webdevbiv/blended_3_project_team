@@ -3,8 +3,10 @@
  * Все паршалы подключаются сюда.
  */
 
-// Сброс стилей restet.
+// Сброс стилей reset.
 @import './reset';
+// Шрифты Titan One Normal 400; DM Sans Normal 400, 500, 700.
+@import './fonts';
 
 // Стили для файла с примером HTML-фрагмента
 @import './example';
