@@ -15,8 +15,9 @@
 //Переменные и цвета.
 @import './utils/variables';
 
-//Стили для компонентов.
+//Стили для компонентов/секций.
 @import './components/body';
+@import './components/test';
 
 // Стили для файла с примером HTML-фрагмента
 @import './example';
