@@ -7,8 +7,11 @@
 @import './base/reset';
 // Шрифты Titan One Normal 400; DM Sans Normal 400, 500, 700.
 @import './base/fonts';
+//Примеси
+@import './abstracts/mixins';
 // Стили для отладки.
 @import './base/dev-tools';
+
 //Контейнеры для секций.
 @import './base/container';
 

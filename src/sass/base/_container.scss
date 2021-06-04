@@ -6,28 +6,22 @@
   margin-right: auto;
   //background-color: aqua;
 
-  @media screen and (min-width: 320px) {
+  @include for-phone {
     max-width: 320px;
     padding-left: 0px;
     padding-right: 0px;
     // background-color: olive;
   }
-  @media screen and (min-width: 768px) {
+  @include for-tablet {
     max-width: 768px;
     padding-left: 0px;
     padding-right: 0px;
     // background-color: lightcoral;
   }
-  @media screen and (min-width: 1200px) {
+  @include for-desktop {
     max-width: 1200px;
     padding-left: 0px;
     padding-right: 0px;
     // background-color: blueviolet;
   }
-}
-
-*,
-::after,
-::before {
-  //  outline: 1px solid red;
 }

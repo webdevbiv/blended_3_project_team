@@ -1,7 +1,7 @@
 *,
 ::after,
 ::before {
-  outline: 1px solid red;
+  //outline: 1px solid red;
 }
 
 .outr {
@@ -10,4 +10,17 @@
 
 .outb {
   outline: 1px solid blue;
+}
+
+.container {
+  //background-color: aqua;
+  @include for-phone {
+    // background-color: olive;
+  }
+  @include for-tablet {
+    // background-color: lightcoral;
+  }
+  @include for-desktop {
+    // background-color: blueviolet;
+  }
 }
