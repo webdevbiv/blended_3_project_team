@@ -1,0 +1,27 @@
+// Для размеров экранов
+@mixin for-phone {
+  @media (max-width: 767.99px) {
+    @content;
+  }
+}
+
+@mixin for-tablet {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin for-desktop {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+// usage
+// .my-box {
+//   padding: 10px;
+
+//   @include for-desktop {
+//     padding: 20px;
+//   }
+// }
