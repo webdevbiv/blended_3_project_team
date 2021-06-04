@@ -19,6 +19,15 @@
 @import './utils/variables';
 
 //Стили для компонентов/секций.
+@import './components/header';
+@import './components/hero';
+@import './components/about';
+@import './components/advantages';
+@import './components/gallery';
+@import './components/testimonials';
+@import './components/contacts';
+@import './components/footer';
+
 @import './components/body';
 @import './components/test';
 
