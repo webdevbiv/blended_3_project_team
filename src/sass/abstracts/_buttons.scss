@@ -1,0 +1,38 @@
+// кнопки на header мобильный и планшет 2 шт //
+
+%btn-header-mob {
+  height: 24px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+%btn-header-tablet {
+  height: 24px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+// конец  кнопки на header мобильный и планшет 2 шт //
+
+// кнопки на header компьютер 2 шт //
+
+%btn-header {
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+// конец  кнопки на header компьютер 2 шт //
+
+// кнопки остальные//
+%btn {
+  height: 44px;
+  border-radius: 22px;
+  border: none;
+  cursor: pointer;
+}
+
+// конец  кнопки остальные //
