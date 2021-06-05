@@ -1,0 +1,175 @@
+%title-main {
+  font-family: $font-family-secondary;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $text-color-main;
+}
+
+%title-main-passion {
+  font-family: $font-family-secondary;
+  // font-size: 26px;
+  // line-height: 1.15;
+  // потрібно підібрати візуально
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $color-accent;
+}
+
+%title-section {
+  font-family: $font-family-secondary;
+  font-size: 34px;
+  line-height: 39px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $color-accent;
+}
+
+%title-products {
+  font-family: $font-family-secondary;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $text-color-main;
+}
+
+%title-card-contacts {
+  font-family: $font-family-main;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1, 86;
+  letter-spacing: 0.04em;
+  color: $text-color-main;
+}
+
+%text-mobile-menu {
+  font-family: $font-family-main;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28;
+  color: $text-color-main;
+}
+
+%text-decorative {
+  font-family: $font-family-secondary;
+  font-size: 18px;
+  line-height: 1.17;
+  text-transform: uppercase;
+  color: $text-color-decorative;
+}
+
+%text-product {
+  font-family: $font-family-main;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  color: $text-color-main;
+}
+
+%text-about {
+  font-family: $font-family-main;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+  color: $text-color-secondary;
+}
+
+%text-about-additional {
+  font-family: $font-family-main;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+  color: $text-color-additional;
+}
+
+%text-advantages-counter {
+  font-family: $font-family-secondary;
+  font-size: 36px;
+  line-height: 1.34;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $color-accent;
+}
+
+%text-advantages {
+  font-family: $font-family-main;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.7;
+  color: $text-color-secondary;
+}
+
+%text-testimonials {
+  font-family: $font-family-main;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  color: $text-color-secondary;
+}
+
+%text-testimonials-name {
+  font-family: $font-family-main;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.55;
+  color: $text-color-secondary;
+}
+
+%text-contacts-city-working_days {
+  font-family: $font-family-main;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  color: $text-color-secondary;
+}
+
+%text-contacts-working_hours {
+  font-family: $font-family-main;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  color: $text-color-decorative;
+}
+
+%text-contacts-description-tel_mail {
+  font-family: $font-family-main;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: $text-color-additional;
+}
+
+%text-footer {
+  font-family: $font-family-main;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: $text-color-secondary;
+}
+
+%text-footer-tel {
+  font-family: $font-family-main;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: $color-accent;
+}
+
+%text-copyright {
+  font-family: $font-family-main;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.52;
+  color: $text-color-additional;
+}
