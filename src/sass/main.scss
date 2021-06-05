@@ -19,6 +19,7 @@
 @import './utils/variables';
 
 //Стили для компонентов/секций.
+@import './components/body';
 @import './components/header';
 @import './components/mobile-menu';
 @import './components/hero';
@@ -29,7 +30,6 @@
 @import './components/contacts';
 @import './components/footer';
 
-@import './components/body';
 @import './components/test';
 
 // Стили для файла с примером HTML-фрагмента
