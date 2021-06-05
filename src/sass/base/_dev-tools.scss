@@ -15,7 +15,7 @@
 .container {
   //background-color: aqua;
   @include for-phone {
-    // background-color: olive;
+    background-color: rgb(253, 253, 211);
   }
   @include for-tablet {
     // background-color: lightcoral;
