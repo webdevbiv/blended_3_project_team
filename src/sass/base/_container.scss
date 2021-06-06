@@ -1,27 +1,27 @@
 .container {
   width: 100%;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
   //background-color: aqua;
 
   @include for-phone {
     max-width: 320px;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
     // background-color: olive;
   }
   @include for-tablet {
     max-width: 768px;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 34px;
+    padding-right: 34px;
     // background-color: lightcoral;
   }
   @include for-desktop {
     max-width: 1280px;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 115px;
+    padding-right: 115px;
     // background-color: blueviolet;
   }
 }
