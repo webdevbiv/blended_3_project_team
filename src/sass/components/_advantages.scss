@@ -1,10 +1,15 @@
 .advantages {
+  &__img {
+    margin-bottom: 16px;
+  }
   &__about {
     font-family: Titan One;
     font-size: 36px;
     line-height: 1.14;
     letter-spacing: 0.04em;
     text-transform: uppercase;
+    width: 98px;
+    height: 56px;
     color: #d41443;
   }
   &__text {
@@ -18,11 +23,12 @@
     @include for-desktop {
       @include grid-list(30px);
     }
+    margin-top: 39px;
   }
   &__item {
     @include for-desktop {
       @include grid-item(3, 30px);
     }
-    margin-bottom: 16px;
+    margin-bottom: 38px;
   }
 }
