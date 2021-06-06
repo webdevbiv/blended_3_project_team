@@ -15,13 +15,14 @@
     color: #000;
   }
   &__list {
-    @media screen and (min-width: 1280px) {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      &__:not(last-child) {
-        margin-right: 30px;
-      }
+    @include for-desktop {
+      @include grid-list(30px);
     }
+  }
+  &__item {
+    @include for-desktop {
+      @include grid-item(3, 30px);
+    }
+    margin-bottom: 16px;
   }
 }
