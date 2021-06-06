@@ -13,6 +13,17 @@
       background-image: url(../images/mobile/about/about_milk@2x.png);
     }
   }
+
+  @include for-desktop {
+    background-image: url(../images/desktop/about/about_milk.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 96%;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/desktop/about/about_milk@2x.png);
+    }
+  }
 }
 
 .about__subtitle {
