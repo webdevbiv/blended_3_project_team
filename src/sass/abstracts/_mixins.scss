@@ -17,11 +17,33 @@
   }
 }
 
-// usage
+// Как использовать
 // .my-box {
 //   padding: 10px;
 
 //   @include for-desktop {
 //     padding: 20px;
 //   }
+// }
+
+//Сетка для карточек
+@mixin grid-list($margin) {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(#{$margin} * -1);
+  margin-left: calc(#{$margin} * -1);
+}
+
+@mixin grid-item($columns, $margin) {
+  flex-basis: calc((100% / #{$columns}) - #{$margin});
+  // flex-basis: calc((100% - #{$grid-item-margin} * #{$columns}) / #{$columns});
+  margin-left: $margin;
+  margin-top: $margin;
+}
+// .ul(задать класс для списка) {
+//   @include grid-list(марджин между колонками);
+//  }
+//
+// .li(задать класс для карточек) {
+//   @include grid-item(колонки, марджин между колонками);
 // }
