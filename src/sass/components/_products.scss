@@ -1,0 +1,11 @@
+.products__list {
+  @include for-desktop {
+    @include grid-list(30px);
+  }
+}
+
+.prodacts__list-item {
+  @include for-desktop {
+    @include grid-item(3, 30px);
+  }
+}
