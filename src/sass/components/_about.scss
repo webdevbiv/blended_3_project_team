@@ -220,11 +220,13 @@
   }
 
   @include for-tablet {
+    margin-left: 13px;
     width: 10px;
     height: 10px;
   }
 
   @include for-desktop {
+    margin-left: 13px;
     width: 10px;
     height: 10px;
   }
