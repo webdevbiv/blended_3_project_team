@@ -4,7 +4,7 @@
   }
 }
 
-.prodacts__list-item {
+.products__list-item {
   @include for-desktop {
     @include grid-item(3, 30px);
   }
