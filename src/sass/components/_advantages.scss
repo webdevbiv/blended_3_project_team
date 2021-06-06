@@ -1,0 +1,27 @@
+.advantages {
+  &__about {
+    font-family: Titan One;
+    font-size: 36px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #d41443;
+  }
+  &__text {
+    font-family: DM Sans;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 170%;
+    color: #000;
+  }
+  &__list {
+    @media screen and (min-width: 1280px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &__:not(last-child) {
+        margin-right: 30px;
+      }
+    }
+  }
+}
