@@ -1,0 +1,100 @@
+.slick-next, .slick-prev{
+    display: none;
+}
+.slick-initialized .slick-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.testimonials__img{
+    margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 20px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 15px;
+    }
+}
+.testimonials__text--block{
+    display: flex;
+    justify-content: center;
+    padding: 40px 50px 20px;
+    background: #FAFAFA;
+    margin-bottom: 52px;
+    // position: relative;
+    // &::after{
+    //     margin-bottom: 30px;
+    //     content: '';
+    //     position: absolute;
+    //     display: block;
+    //     width: 4px;
+    //     height: 4px;
+    //     border-radius: 50%;
+    // }
+}
+.testimonials__text{
+    display: inline-block;
+    text-align: center;
+    min-width: 180px;
+    max-width: 950px;
+    background: repeating-linear-gradient(
+        to bottom,
+        transparent -2px,
+        transparent 27px,
+        #e1e1e1 27px,
+        #e1e1e1 28px
+    );
+
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 2.55;
+    text-align: center;
+    color: #000000;
+
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+        line-height: 2.16;
+        letter-spacing: 0.04em;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 16px;
+        line-height: 1.86;
+    }
+}
+.testimonials__name{
+    margin-bottom: 30px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.86;
+    text-align: center;
+    color: #000000;
+    
+}
+.slick-dots li button:before {
+    font-family: slick;
+    font-size: 12px;
+    line-height: 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 13px;
+    height: 12px;
+    content: '•';
+    text-align: center;
+    opacity: .25;
+    color: #000;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: transparent;
+    background: url('../images/mobile/reviews/home-svg.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
