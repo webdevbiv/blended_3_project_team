@@ -1,0 +1,89 @@
+.header {
+  background-color: #ffb8ca;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__nav {
+  display: flex;
+}
+
+.header__logo {
+  @include for-phone {
+    margin-top: 6px;
+  }
+
+  @include for-tablet {
+    margin-top: 37px;
+  }
+
+  @include for-desktop {
+    margin-top: 37px;
+  }
+}
+
+.header__list {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+
+  @include for-phone {
+    display: none;
+  }
+
+  @include for-tablet {
+    display: none;
+  }
+
+  @include for-desktop {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.header__item:not(:last-child) {
+  margin-right: 35px;
+}
+
+.header__link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.header__link--current {
+  color: #d41443;
+}
+
+.header__button {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.3;
+  align-items: center;
+  text-align: center;
+
+  color: #d41443;
+  background-color: #ffffff;
+  margin-top: 37px;
+
+  width: 160px;
+  height: 44px;
+  border-radius: 22px;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #ecebeb;
+  }
+
+  @include for-phone {
+    display: none;
+  }
+}
