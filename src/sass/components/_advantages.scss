@@ -5,6 +5,7 @@
   }
 }
 .advantages {
+  background-color: $bg-color-card-contanct;
   &__img {
     @include for-phone {
       margin-bottom: 16px;
