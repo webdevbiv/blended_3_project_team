@@ -1,13 +1,33 @@
-.content {
+.advantages__content {
   @include for-phone {
     padding-right: 50px;
     padding-bottom: 100px;
   }
+  @include for-tablet {
+    padding-right: 0;
+  }
+  @include for-desktop {
+    padding-right: 0;
+    padding-top: 0;
+  }
 }
 .advantages {
+  background-color: $bg-color-card-contanct;
+  @include for-tablet {
+    padding-bottom: 140px;
+  }
+  @include for-desktop {
+    background-color: $bg-color-section-contrast;
+  }
   &__img {
     @include for-phone {
       margin-bottom: 16px;
+    }
+    @include for-tablet {
+      margin-bottom: 36px;
+    }
+    @include for-desktop {
+      margin-bottom: 40px;
     }
   }
   &__about {
@@ -20,21 +40,43 @@
       text-transform: uppercase;
       color: $color-accent;
     }
+    @include for-tablet {
+      margin-bottom: 20px;
+      font-family: $font-family-secondary;
+      font-style: Regular;
+      font-size: 48px;
+      line-height: 1.15;
+      letter-spacing: 0.04em;
+      color: $color-accent;
+    }
   }
   &__text {
+    font-family: $font-family-main;
+    font-weight: bold;
+    color: $text-color-secondary;
     @include for-phone {
-      font-family: $font-family-main;
-      font-weight: bold;
+      margin-bottom: 20px;
       font-size: 12px;
-      line-height: 170%;
-      color: $text-color-secondary;
+      line-height: 1.67;
+    }
+    @include for-tablet {
+      width: 180px;
+      font-size: 16px;
+      line-height: 1.75;
+    }
+    @include for-desktop {
+      width: 300px;
     }
   }
   &__list {
-    @include for-desktop {
-      @include grid-list(30px);
+    @include for-tablet {
+      @include grid-list(0);
+      margin-top: 0;
     }
-    margin-top: 39px;
+    @include for-desktop {
+      @include grid-list(0);
+      margin-left: 0;
+    }
   }
   &__item {
     @include for-phone {
@@ -42,8 +84,21 @@
         margin-bottom: 38px;
       }
     }
+    @include for-tablet {
+      @include grid-item(3, 80px);
+      margin-left: 0;
+      margin-top: 0;
+      &:not(:last-child) {
+        margin-right: 80px;
+      }
+    }
     @include for-desktop {
       @include grid-item(3, 30px);
+      margin-left: 0;
+      margin-top: 0;
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
     }
   }
 }
