@@ -4,18 +4,20 @@
     padding-bottom: 100px;
   }
   @include for-tablet {
-    padding-right: 40px;
+    padding-right: 0;
   }
   @include for-desktop {
     padding-right: 0;
-    padding-top: 125px;
+    padding-top: 0;
   }
 }
 .advantages {
   background-color: $bg-color-card-contanct;
   @include for-tablet {
-    padding-top: 35px;
     padding-bottom: 140px;
+  }
+  @include for-desktop {
+    background-color: $bg-color-section-contrast;
   }
   &__img {
     @include for-phone {
@@ -49,13 +51,21 @@
     }
   }
   &__text {
+    font-family: $font-family-main;
+    font-weight: bold;
+    color: $text-color-secondary;
     @include for-phone {
       margin-bottom: 20px;
-      font-family: $font-family-main;
-      font-weight: bold;
       font-size: 12px;
-      line-height: 170%;
-      color: $text-color-secondary;
+      line-height: 1.67;
+    }
+    @include for-tablet {
+      width: 180px;
+      font-size: 16px;
+      line-height: 1.75;
+    }
+    @include for-desktop {
+      width: 300px;
     }
   }
   &__list {
@@ -64,10 +74,9 @@
       margin-top: 0;
     }
     @include for-desktop {
-      @include grid-list(30px);
+      @include grid-list(0);
       margin-left: 0;
     }
-    margin-top: 39px;
   }
   &__item {
     @include for-phone {
@@ -76,11 +85,11 @@
       }
     }
     @include for-tablet {
-      @include grid-item(3, 60px);
+      @include grid-item(3, 80px);
       margin-left: 0;
       margin-top: 0;
       &:not(:last-child) {
-        margin-right: 60px;
+        margin-right: 80px;
       }
     }
     @include for-desktop {
