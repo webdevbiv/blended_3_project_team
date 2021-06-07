@@ -1,8 +1,5 @@
 .advantages-section {
-  background-color: $bg-color-card-contanct;
-  @include for-desktop {
-    background-color: $bg-color-section-contrast;
-  }
+  background-color: $bg-color-section-contrast;
 }
 .advantages {
   @include for-tablet {
