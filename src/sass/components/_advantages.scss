@@ -1,23 +1,25 @@
-.advantages__content {
-  @include for-phone {
-    padding-right: 50px;
-    padding-bottom: 100px;
-  }
-  @include for-tablet {
-    padding-right: 0;
-  }
+.advantages-section {
+  background-color: $bg-color-card-contanct;
   @include for-desktop {
-    padding-right: 0;
-    padding-top: 0;
+    background-color: $bg-color-section-contrast;
   }
 }
 .advantages {
-  background-color: $bg-color-card-contanct;
   @include for-tablet {
     padding-bottom: 140px;
   }
-  @include for-desktop {
-    background-color: $bg-color-section-contrast;
+  &__content {
+    @include for-phone {
+      padding-right: 50px;
+      padding-bottom: 100px;
+    }
+    @include for-tablet {
+      padding-right: 0;
+    }
+    @include for-desktop {
+      padding-right: 0;
+      padding-top: 0;
+    }
   }
   &__img {
     @include for-phone {
