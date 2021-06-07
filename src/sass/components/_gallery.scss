@@ -1,0 +1,36 @@
+.gallery {
+  background-image: linear-gradient(
+    to bottom,
+    $bg-color-section-contrast 39% 48px,
+    $bg-color-section-light 10% 74px
+  );
+  background-repeat: no-repeat;
+  background-size: contain;
+  @include for-phone {
+  }
+}
+
+.no-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.gallery_bg {
+  margin-left: auto;
+  margin-right: auto;
+
+  @include for-phone {
+    padding-top: 61px;
+    padding-bottom: 61px;
+    background-image: url(../images/gallery/phone/gallery_bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/gallery/phone/gallery_bg@2x.png);
+    }
+  }
+}
