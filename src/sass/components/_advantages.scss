@@ -1,23 +1,34 @@
+.content {
+  @include for-phone {
+    padding-right: 50px;
+    padding-bottom: 100px;
+  }
+}
 .advantages {
   &__img {
-    margin-bottom: 16px;
+    @include for-phone {
+      margin-bottom: 16px;
+    }
   }
   &__about {
-    font-family: Titan One;
-    font-size: 36px;
-    line-height: 1.14;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    width: 98px;
-    height: 56px;
-    color: #d41443;
+    @include for-phone {
+      margin-bottom: 20px;
+      font-family: $font-family-secondary;
+      font-size: 36px;
+      line-height: 1.14;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: $color-accent;
+    }
   }
   &__text {
-    font-family: DM Sans;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 170%;
-    color: #000;
+    @include for-phone {
+      font-family: $font-family-main;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 170%;
+      color: $text-color-secondary;
+    }
   }
   &__list {
     @include for-desktop {
