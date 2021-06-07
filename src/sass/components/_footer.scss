@@ -1,0 +1,65 @@
+.footer {
+  background-color: $bg-color-section-contrast;
+
+  .footer__info {
+    @include for-phone {
+      max-width: 340px;
+      margin-bottom: 0;
+    }
+
+    @include for-tablet {
+      max-width: 234px;
+      margin-bottom: 43px;
+    }
+
+    @include for-desktop {
+      max-width: 480px;
+    }
+  }
+
+  .footer__info-one {
+    font-family: $font-family-secondary;
+    text-transform: uppercase;
+    color: $text-color-decorative;
+
+    @include for-phone {
+      max-width: 340px;
+      margin-bottom: 0;
+    }
+
+    @include for-tablet {
+      font-size: 18px;
+      line-height: 1.667;
+      margin-bottom: 30px;
+    }
+
+    @include for-desktop {
+      font-size: 30px;
+      line-height: 1.133;
+      margin-bottom: 15px;
+    }
+  }
+
+  .footer__info-two {
+    font-family: $font-family-secondary;
+    color: $color-accent;
+    text-transform: uppercase;
+
+    @include for-phone {
+      font-size: 34px;
+      letter-spacing: 0.06em;
+    }
+
+    @include for-tablet {
+      font-size: 48px;
+      line-height: 1.147;
+      letter-spacing: 0.04em;
+    }
+
+    @include for-desktop {
+      font-size: 58px;
+      line-height: 1.138;
+      letter-spacing: 0.06em;
+    }
+  }
+}
