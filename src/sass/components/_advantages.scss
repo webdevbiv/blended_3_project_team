@@ -1,14 +1,31 @@
-.content {
+.advantages__content {
   @include for-phone {
     padding-right: 50px;
     padding-bottom: 100px;
   }
+  @include for-tablet {
+    padding-right: 40px;
+  }
+  @include for-desktop {
+    padding-right: 0;
+    padding-top: 125px;
+  }
 }
 .advantages {
   background-color: $bg-color-card-contanct;
+  @include for-tablet {
+    padding-top: 35px;
+    padding-bottom: 140px;
+  }
   &__img {
     @include for-phone {
       margin-bottom: 16px;
+    }
+    @include for-tablet {
+      margin-bottom: 36px;
+    }
+    @include for-desktop {
+      margin-bottom: 40px;
     }
   }
   &__about {
@@ -21,9 +38,19 @@
       text-transform: uppercase;
       color: $color-accent;
     }
+    @include for-tablet {
+      margin-bottom: 20px;
+      font-family: $font-family-secondary;
+      font-style: Regular;
+      font-size: 48px;
+      line-height: 1.15;
+      letter-spacing: 0.04em;
+      color: $color-accent;
+    }
   }
   &__text {
     @include for-phone {
+      margin-bottom: 20px;
       font-family: $font-family-main;
       font-weight: bold;
       font-size: 12px;
@@ -32,8 +59,13 @@
     }
   }
   &__list {
+    @include for-tablet {
+      @include grid-list(0);
+      margin-top: 0;
+    }
     @include for-desktop {
       @include grid-list(30px);
+      margin-left: 0;
     }
     margin-top: 39px;
   }
@@ -43,8 +75,21 @@
         margin-bottom: 38px;
       }
     }
+    @include for-tablet {
+      @include grid-item(3, 60px);
+      margin-left: 0;
+      margin-top: 0;
+      &:not(:last-child) {
+        margin-right: 60px;
+      }
+    }
     @include for-desktop {
       @include grid-item(3, 30px);
+      margin-left: 0;
+      margin-top: 0;
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
     }
   }
 }
