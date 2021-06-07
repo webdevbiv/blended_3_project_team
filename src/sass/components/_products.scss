@@ -1,4 +1,21 @@
-.products__list {
+.products {
+  padding-top: 121px;
+  padding-bottom: 98px;
+}
+
+.products__lable {
+  font-family: $font-family-secondary;
+  color: $text-color-decorative;
+  font-size: 18px;
+  line-height: 1.167;
+  text-align: center;
+  text-transform: uppercase;
+}
+.products__title {
+  @extend %title-section;
+}
+
+%title-section .products__lable .products__list {
   @include for-desktop {
     @include grid-list(30px);
   }
@@ -9,3 +26,6 @@
     @include grid-item(3, 30px);
   }
 }
+// .products__list-description {
+//   @extend %text-product;
+// }
