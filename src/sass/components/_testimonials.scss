@@ -1,6 +1,7 @@
 .testimonials{
     margin-top: 80px;
     margin-bottom: 86px;
+
     @include for-tablet{
         margin-top: 120px;
         margin-bottom: 120px;
@@ -11,6 +12,7 @@
     }
 }
 .testimonials-container{
+
     @include for-tablet{
         padding-left: 74px;
         padding-right: 74px;
@@ -31,6 +33,7 @@
 }
 .testimonials__img{
     margin-bottom: 30px;
+
     @include for-tablet{
         margin-bottom: 20px;
     }
@@ -44,25 +47,20 @@
     padding: 40px 50px 20px;
     background: #FAFAFA;
     margin-bottom: 52px;
+
     @include for-tablet{
         padding: 29px 38px;
     }
     @include for-desktop{
         padding: 32px 53px;
     }
-    // position: relative;
-    // &::after{
-    //     margin-bottom: 30px;
-    //     content: '';
-    //     position: absolute;
-    //     display: block;
-    //     width: 4px;
-    //     height: 4px;
-    //     border-radius: 50%;
-    // }
+
 }
 .testimonials__text{
     display: inline-block;
+    position: relative;
+    z-index: 23;
+
     text-align: center;
     min-width: 180px;
     max-width: 950px;
@@ -85,9 +83,23 @@
         font-size: 16px;
         line-height: 1.86;
     }
+    &::before{
+        content: '';
+        top: -14px;
+        left: -27px;
+        position: absolute;
+        background: url('../images/mobile/reviews/symbol.png');
+        background-repeat: no-repeat;
+        width: 54px;
+        height: 40px;
+        z-index: -1;
+    }
+    
 }
 .testimonials__name{
     margin-bottom: 30px;
+    position: relative;
+
     @extend %text-testimonials;
     text-align: center;
 
@@ -98,7 +110,26 @@
     @include for-desktop{
         font-size: 20px;
     }
-
+    &::after{
+        content: '';
+        display: block;
+        top: -15px;
+        left: 45px;
+        height: 4px;
+        width: 32px;
+        border-bottom: 6px dotted $bg-color-btn-contrast_hover;
+        position: absolute;
+        
+        @include for-tablet{
+            top: -16px;
+            left: 55px;
+        }
+        @include for-desktop{
+            top: -18px;
+            left: 73px;
+        }
+    }
+    
 }
 .slick-dots li button:before {
     font-family: slick;
