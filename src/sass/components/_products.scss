@@ -1,3 +1,19 @@
+%title-section .products__lable .products__list {
+  @include for-desktop {
+    @include grid-list(30px);
+  }
+}
+
+.products__list-item {
+  @include for-desktop {
+    @include grid-item(3, 30px);
+  }
+}
+
+.products__list-item {
+  align-items: center;
+}
+
 .products {
   padding-top: 121px;
   padding-bottom: 98px;
@@ -15,24 +31,7 @@
 .products__title {
   @extend %title-section;
   text-align: center;
-  margin-bottom: 31px;
-}
-
-%title-section .products__lable .products__list {
-  @include for-desktop {
-    @include grid-list(30px);
-  }
-}
-
-.products__list-item {
-  @include for-desktop {
-    @include grid-item(3, 30px);
-  }
-  align-items: center;
-  justify-content: center;
-}
-.products__thumb:not(:last-child) {
-  margin-bottom: 121px;
+  margin-bottom: 144px;
 }
 
 .products__thumb {
@@ -40,12 +39,45 @@
   border-radius: 24px;
   padding-right: 39px;
   padding-left: 41px;
+  padding-top: 161px;
+  padding-bottom: 41px;
   &:not(:last-child) {
     margin-bottom: 121px;
   }
+
+  min-width: 280px;
+  min-height: 485px;
+
+  text-align: center;
+  // justify-content: space-between;
+  align-items: center;
+}
+
+.products__name {
+  @extend %title-products;
+  text-align: center;
+  margin-bottom: 66px;
 }
 .products__ice-cream {
   background: $bg-color-card-produсt-ice_cream;
+  position: relative;
+}
+.products__name::before {
+  position: absolute;
+  content: '';
+  display: flex;
+  width: 249px;
+  height: 252px;
+  background-repeat: no-repeat;
+
+  justify-content: center;
+  align-items: center;
+
+  top: 3%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-image: url(../images/mobile/products/products_icecream.png);
 }
 
 .products__ice-coffe {
@@ -59,4 +91,12 @@
 .products__list-description {
   @extend %text-product;
   text-align: center;
+  margin-bottom: 30px;
+}
+.products__button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: $bg-color-btn-light;
+  border: $bg-color-btn-light;
 }
