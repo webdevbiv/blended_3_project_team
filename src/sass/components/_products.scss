@@ -9,14 +9,12 @@
     @include grid-item(3, 30px);
   }
 }
-
-.products__list-item {
-  align-items: center;
-}
-
-.products {
+.products-section {
   padding-top: 121px;
   padding-bottom: 98px;
+}
+.products__list-item {
+  align-items: center;
 }
 
 .products__lable {
@@ -77,15 +75,26 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
-  background-image: url(../images/mobile/products/products_icecream.png);
+  .products__ice-cream & {
+    background-image: url(../images/mobile/products/products_icecream.png);
+  }
+
+  .products__ice-coffe & {
+    background-image: url(../images/mobile/products/products_coffe.png);
+  }
+  .products__milk_shakes & {
+    background-image: url(../images/mobile/products/products_milkshake.png);
+  }
 }
 
 .products__ice-coffe {
   background-color: $bg-color-card-produсt-ice_coffee;
+  position: relative;
 }
 
 .products__milk_shakes {
   background-color: $bg-color-card-produсt-milk_shakes;
+  position: relative;
 }
 
 .products__list-description {
