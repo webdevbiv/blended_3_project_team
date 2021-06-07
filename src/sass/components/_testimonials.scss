@@ -1,3 +1,27 @@
+.testimonials{
+    margin-top: 80px;
+    margin-bottom: 86px;
+
+    @include for-tablet{
+        margin-top: 120px;
+        margin-bottom: 120px;
+    }
+    @include for-desktop{
+        margin-top: 123px;
+        margin-bottom: 132px;
+    }
+}
+.testimonials-container{
+
+    @include for-tablet{
+        padding-left: 74px;
+        padding-right: 74px;
+    }
+    @include for-desktop{
+        padding-left: 178px;
+        padding-right: 178px;
+    }
+}
 .slick-next, .slick-prev{
     display: none;
 }
@@ -9,10 +33,11 @@
 }
 .testimonials__img{
     margin-bottom: 30px;
-    @media screen and (min-width: 768px) {
+
+    @include for-tablet{
         margin-bottom: 20px;
     }
-    @media screen and (min-width: 1200px) {
+    @include for-desktop {
         margin-bottom: 15px;
     }
 }
@@ -22,19 +47,20 @@
     padding: 40px 50px 20px;
     background: #FAFAFA;
     margin-bottom: 52px;
-    // position: relative;
-    // &::after{
-    //     margin-bottom: 30px;
-    //     content: '';
-    //     position: absolute;
-    //     display: block;
-    //     width: 4px;
-    //     height: 4px;
-    //     border-radius: 50%;
-    // }
+
+    @include for-tablet{
+        padding: 29px 38px;
+    }
+    @include for-desktop{
+        padding: 32px 53px;
+    }
+
 }
 .testimonials__text{
     display: inline-block;
+    position: relative;
+    z-index: 23;
+
     text-align: center;
     min-width: 180px;
     max-width: 950px;
@@ -45,34 +71,64 @@
         #e1e1e1 27px,
         #e1e1e1 28px
     );
-
-    font-family: DM Sans;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 2.55;
+    @extend %text-testimonials-name;
     text-align: center;
-    color: #000000;
 
-    @media screen and (min-width: 768px) {
+    @include for-tablet{
         font-size: 14px;
         line-height: 2.16;
         letter-spacing: 0.04em;
     }
-    @media screen and (min-width: 1200px) {
+    @include for-desktop {
         font-size: 16px;
         line-height: 1.86;
     }
+    &::before{
+        content: '';
+        top: -14px;
+        left: -27px;
+        position: absolute;
+        background: url('../images/mobile/reviews/symbol.png');
+        background-repeat: no-repeat;
+        width: 54px;
+        height: 40px;
+        z-index: -1;
+    }
+    
 }
 .testimonials__name{
     margin-bottom: 30px;
-    font-family: DM Sans;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.86;
+    position: relative;
+
+    @extend %text-testimonials;
     text-align: center;
-    color: #000000;
+
+    @include for-tablet{
+    font-size: 16px;
+    margin-bottom: 35px;
+    }
+    @include for-desktop{
+        font-size: 20px;
+    }
+    &::after{
+        content: '';
+        display: block;
+        top: -15px;
+        left: 45px;
+        height: 4px;
+        width: 32px;
+        border-bottom: 6px dotted $bg-color-btn-contrast_hover;
+        position: absolute;
+        
+        @include for-tablet{
+            top: -16px;
+            left: 55px;
+        }
+        @include for-desktop{
+            top: -18px;
+            left: 73px;
+        }
+    }
     
 }
 .slick-dots li button:before {
@@ -87,7 +143,7 @@
     content: '•';
     text-align: center;
     opacity: .25;
-    color: #000;
+    color: $text-color-secondary;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
