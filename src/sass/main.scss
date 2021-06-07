@@ -8,7 +8,6 @@
 // Шрифты Titan One Normal 400; DM Sans Normal 400, 500, 700.
 @import './base/fonts';
 //Примеси
-@import './abstracts/mobile_styles';
 @import './abstracts/mixins';
 @import './abstracts/buttons';
 
@@ -20,6 +19,9 @@
 
 //Переменные и цвета.
 @import './utils/variables';
+
+//Стили для мобилки.
+@import './abstracts/mobile_styles';
 
 //Стили для компонентов/секций.
 @import './components/body';
