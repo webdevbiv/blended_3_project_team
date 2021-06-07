@@ -37,9 +37,13 @@
     margin-top: 39px;
   }
   &__item {
+    @include for-phone {
+      &:not(:last-child) {
+        margin-bottom: 38px;
+      }
+    }
     @include for-desktop {
       @include grid-item(3, 30px);
     }
-    margin-bottom: 38px;
   }
 }
