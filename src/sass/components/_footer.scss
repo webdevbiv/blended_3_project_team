@@ -6,9 +6,16 @@
 
     @include for-phone {
       max-width: 340px;
-      margin-bottom: 50px;
       margin-right: 66px;
       margin-left: 22px;
+    }
+
+    @include for-tablet {
+      max-width: 340px;
+    }
+
+    @include for-desktop {
+      max-width: 480px;
     }
   
     .footer__info-one {
@@ -22,9 +29,9 @@
       }
   
       @include for-tablet {
-        font-size: 18px;
-        line-height: 1.667;
-        margin-bottom: 30px;
+        font-size: 26px;
+        line-height: 1.145;
+        padding-bottom: 16px;
       }
   
       @include for-desktop {
@@ -58,17 +65,6 @@
     }
   }
 
-  .footer__info-one {
-    font-family: $font-family-secondary;
-    text-transform: uppercase;
-    color: $text-color-decorative;
-
-    @include for-phone {
-      max-width: 340px;
-      margin-bottom: 0;
-      padding-bottom: 17px;
-    }
-  
     .footer__socials-item:not(:last-child) {
       margin-right: 30px;
     }
@@ -139,7 +135,6 @@
   
       @include for-tablet {
         min-height: 83px;
-  
       }
   
       @include for-desktop {
@@ -163,12 +158,26 @@
         letter-spacing: 0.02em;
       }
     }
+  .footer__container {
+    @include for-tablet {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0px;
+    margin-bottom: 90px;
+    }
+
+    @include for-desktop {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0px;
+    margin-bottom: 97px;
+    }
+    
   }
 
   .footer__socials-list {
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 46px;
   }
 
   .footer__socials-item:not(:last-child) {
@@ -209,11 +218,12 @@
 
   .footer__contacts-phone {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-wrap;
     font-weight: 700;
     font-size: 12px;
     line-height: 1.833;
     color: $text-color-secondary;
+    margin-top: 46px;
 
     @include for-phone {
       flex-wrap: wrap;
@@ -221,6 +231,15 @@
       line-height: 1, 857;
       margin-bottom: 40px;
     }
+
+    @include for-tablet {
+      margin-top: 46px;
+    }
+
+    @include for-desktop {
+      margin-top: 50px;
+    }
+    
   }
 
   .footer__contacts-link {
@@ -259,13 +278,21 @@
 
     @include for-phone {
       padding-top: 20px;
-      margin-right: 70px;
-      margin-left: 70px;
+      padding-right: 50px;
+      padding-left: 50px;
       padding-bottom: 20px;
       width: 316px;
       font-size: 14px;
       line-height: 1.5;
       letter-spacing: 0.02em;
+    }
+
+    @include for-tablet {
+      width: 480px;
+    }
+
+    @include for-desktop {
+      width: 480px;
     }
   }
 }
