@@ -209,13 +209,12 @@
 }
 .products__name::after {
   content: '';
-  background-image: url();
-  border-radius: 50%;
-  width: 6px;
+  background-image: url(../images/dots/products/dots.png);
+  // border-radius: 50%;
+  width: 26px;
   height: 6px;
   margin-top: 38px;
   display: block;
-  background-color: #fff;
   margin-left: auto;
   margin-right: auto;
 }
@@ -261,4 +260,8 @@
   border-radius: 50%;
   background-color: $bg-color-btn-light;
   border: $bg-color-btn-light;
+}
+
+.products__svg-btn {
+  fill: $bg-color-btn-contrast;
 }
