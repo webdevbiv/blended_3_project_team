@@ -89,7 +89,7 @@
     padding-top: 161px;
     padding-bottom: 41px;
     &:not(:last-child) {
-      margin-bottom: 121px;
+      margin-bottom: 130px;
     }
   }
   @include for-tablet {
@@ -137,9 +137,10 @@
   position: absolute;
   content: '';
   display: flex;
-  width: 249px;
-  height: 252px;
+  width: 100%;
+  height: auto;
   background-repeat: no-repeat;
+  background-size: contain;
 
   justify-content: center;
   align-items: center;
@@ -153,18 +154,40 @@
       width: 249px;
       height: 252px;
       background-image: url(../images/mobile/products/products_icecream.png);
+
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/mobile/products/products_icecream@2x.png);
+      }
     }
 
     @include for-tablet {
       width: 220px;
       height: 226px;
       background-image: url(../images/tablet/products/products_icecream.png);
+
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/tablet/products/products_icecream@2x.png);
+      }
     }
+
     @include for-desktop {
       width: 335px;
       height: 335px;
       top: -10%;
       background-image: url(../images/desktop/products/products_icecream.png);
+
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/desktop/products/products_icecream@2x.png);
+      }
     }
   }
 
@@ -173,6 +196,13 @@
       width: 249px;
       height: 252px;
       background-image: url(../images/mobile/products/products_coffe.png);
+
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/mobile/products/products_coffe@2x.png);
+      }
     }
 
     @include for-tablet {
@@ -210,7 +240,6 @@
 .products__name::after {
   content: '';
   background-image: url(../images/dots/products/dots.png);
-  // border-radius: 50%;
   width: 26px;
   height: 6px;
   margin-top: 38px;
@@ -242,24 +271,42 @@
     margin-bottom: 30px;
     font-size: 14px;
     line-height: 1.52;
+    & > .is-hidden {
+      opacity: 1;
+      visibility: inherit;
+    }
   }
   @include for-tablet {
     margin-bottom: 40px;
     font-size: 14px;
     line-height: 1.76;
+
+    & > .is-hidden {
+      opacity: 0;
+    }
   }
   @include for-desktop {
     margin-bottom: 62px;
     font-size: 16px;
     line-height: 1.75;
+
+    & > .is-hidden {
+      opacity: 0;
+    }
   }
 }
 .products__button {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: $bg-color-btn-light;
   border: $bg-color-btn-light;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 0;
 }
 
 .products__svg-btn {
