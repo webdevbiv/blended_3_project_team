@@ -1,14 +1,20 @@
+.slick-next,
+.slick-prev {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
 .testimonials{
-    margin-top: 80px;
-    margin-bottom: 86px;
+    padding-top: 56px;
+    padding-bottom: 86px;
 
     @include for-tablet{
-        margin-top: 120px;
-        margin-bottom: 120px;
+        padding-top: 96px;
+        padding-bottom: 120px;
     }
     @include for-desktop{
-        margin-top: 123px;
-        margin-bottom: 132px;
+        padding-top: 99px;
+        padding-bottom: 132px;
     }
 }
 .testimonials-container{
@@ -22,9 +28,7 @@
         padding-right: 178px;
     }
 }
-.slick-next, .slick-prev{
-    display: none;
-}
+
 .slick-initialized .slick-slide{
     display: flex;
     justify-content: center;
@@ -46,13 +50,15 @@
     justify-content: center;
     padding: 40px 50px 20px;
     background: #FAFAFA;
-    margin-bottom: 52px;
+    margin-bottom: 30px;
 
     @include for-tablet{
         padding: 29px 38px;
+        margin-bottom: 26px;
     }
     @include for-desktop{
         padding: 32px 53px;
+        margin-bottom: 15px;
     }
 
 }
@@ -96,9 +102,12 @@
     }
     
 }
+.testimonials__dots{
+    margin-bottom: 15px;
+}
 .testimonials__name{
     margin-bottom: 30px;
-    position: relative;
+    // position: relative;
 
     @extend %text-testimonials;
     text-align: center;
@@ -110,26 +119,6 @@
     @include for-desktop{
         font-size: 20px;
     }
-    &::after{
-        content: '';
-        display: block;
-        top: -15px;
-        left: 45px;
-        height: 4px;
-        width: 32px;
-        border-bottom: 6px dotted $bg-color-btn-contrast_hover;
-        position: absolute;
-        
-        @include for-tablet{
-            top: -16px;
-            left: 55px;
-        }
-        @include for-desktop{
-            top: -18px;
-            left: 73px;
-        }
-    }
-    
 }
 .slick-dots li button:before {
     font-family: slick;
