@@ -1,21 +1,19 @@
 .advantages-section {
   background-color: $bg-color-section-contrast;
-}
-.advantages {
   @include for-tablet {
+    padding-right: 0;
     padding-bottom: 140px;
   }
+  @include for-desktop {
+    padding-right: 0;
+    padding-top: 0;
+  }
+}
+.advantages {
   &__content {
     @include for-phone {
       padding-right: 50px;
       padding-bottom: 100px;
-    }
-    @include for-tablet {
-      padding-right: 0;
-    }
-    @include for-desktop {
-      padding-right: 0;
-      padding-top: 0;
     }
   }
   &__img {
