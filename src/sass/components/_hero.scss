@@ -1,6 +1,18 @@
 .hero {
-  padding-top: 171px;
   background-color: #ffb8ca;
+
+  @include for-phone {
+    padding-top: 193px;
+    padding-bottom: 160px;
+  }
+
+  @include for-tablet {
+    padding-top: 102px;
+  }
+
+  @include for-desktop {
+    padding-top: 171px;
+  }
 }
 
 .hero__container {
@@ -10,7 +22,14 @@
 .hero__box-top {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 56px;
+
+  @include for-tablet {
+    margin-bottom: 19px;
+  }
+
+  @include for-desktop {
+    margin-bottom: 56px;
+  }
 }
 
 .hero__title {
@@ -18,60 +37,133 @@
   font-family: Titan One;
   font-style: normal;
   font-weight: normal;
-  font-size: 37px;
-  line-height: 1.12;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
   color: #ffffff;
 
-  width: 277px;
-
   &::after {
     content: '';
-    left: 360px;
-    top: -119px;
     position: absolute;
     border-radius: 50%;
-    width: 538px;
-    height: 538px;
     background-color: #ffa5ba;
+
+    @include for-phone {
+      width: 345px;
+      height: 345px;
+      left: 14px;
+      top: -108px;
+    }
+
+    @include for-tablet {
+      left: 275px;
+      top: -69px;
+      width: 323px;
+      height: 323px;
+    }
+
+    @include for-desktop {
+      left: 360px;
+      top: -119px;
+      width: 538px;
+      height: 538px;
+    }
+  }
+
+  @include for-phone {
+    font-size: 26px;
+    line-height: 1.15;
+    width: 218px;
+    margin-bottom: 19px;
+  }
+
+  @include for-tablet {
+    font-size: 22px;
+    line-height: 1.12;
+    width: 162px;
+    margin-bottom: 20px;
+  }
+
+  @include for-desktop {
+    font-size: 37px;
+    line-height: 1.12;
+    width: 277px;
+    margin-bottom: 25px;
   }
 }
 
 .hero__title--color {
-  font-size: 58px;
-  line-height: 0.9;
-
   color: #d41443;
+
+  @include for-phone {
+    font-size: 48px;
+    line-height: 0.9;
+  }
+
+  @include for-tablet {
+    font-size: 37px;
+    line-height: 1.13;
+  }
+
+  @include for-desktop {
+    font-size: 58px;
+    line-height: 0.9;
+  }
 }
 
 .hero__list {
   display: flex;
-  margin-top: 25px;
 }
 
 .hero__item:not(:last-child) {
-  margin-right: 15px;
+  margin-right: 8px;
+
+  @include for-desktop {
+    margin-right: 15px;
+  }
 }
 
 .hero__button {
-  width: 104px;
-  height: 40px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  align-items: center;
+  text-align: center;
 
   color: #ffffff;
   background-color: #d41443;
   border-radius: 20px;
   border: none;
+  cursor: pointer;
 
   &:hover,
   &:focus {
     background-color: #c7133e;
   }
+
+  @include for-phone {
+    font-size: 8px;
+    line-height: 1.25;
+    width: 62px;
+    height: 24px;
+  }
+
+  @include for-tablet {
+    font-size: 8px;
+    line-height: 1.25;
+    width: 62px;
+    height: 24px;
+  }
+
+  @include for-desktop {
+    font-size: 14px;
+    line-height: 1.28;
+    width: 104px;
+    height: 40px;
+  }
 }
 
 .hero__button--color {
-  width: 138px;
   color: #d41443;
   background-color: #ffffff;
 
@@ -79,34 +171,80 @@
   &:focus {
     background-color: #ecebeb;
   }
+
+  @include for-phone {
+    width: 83px;
+  }
+
+  @include for-tablet {
+    width: 83px;
+  }
+
+  @include for-desktop {
+    width: 138px;
+  }
+}
+
+.hero__list-right {
+  @include for-phone {
+    display: none;
+  }
 }
 
 .hero__item-right {
   position: relative;
-  width: 74px;
 
   font-family: DM Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 1.3;
   text-align: right;
+  z-index: 1;
 
   color: #ffffff;
 
   &:not(:last-child) {
-    margin-bottom: 38px;
+    @include for-tablet {
+      margin-bottom: 24px;
+    }
+
+    @include for-desktop {
+      margin-bottom: 38px;
+    }
+  }
+
+  @include for-tablet {
+    font-size: 8px;
+    line-height: 1.25;
+    width: 43px;
+  }
+
+  @include for-desktop {
+    font-size: 14px;
+    line-height: 1.3;
+    width: 74px;
   }
 
   &::before {
     content: '';
-    left: 61px;
-    top: -30px;
     position: absolute;
+
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
     background-color: #ffffff;
+    z-index: -1;
+
+    @include for-tablet {
+      width: 16px;
+      height: 16px;
+      left: 34px;
+      top: -4px;
+    }
+
+    @include for-desktop {
+      width: 30px;
+      height: 30px;
+      left: 61px;
+      top: -30px;
+    }
   }
 }
 
@@ -114,54 +252,154 @@
   font-family: Titan One;
   font-style: normal;
   font-weight: normal;
-  font-size: 46px;
-  line-height: 1.15px;
   text-align: right;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
   color: #d41443;
+
+  @include for-tablet {
+    font-size: 28px;
+    line-height: 1.14;
+  }
+
+  @include for-desktop {
+    font-size: 46px;
+    line-height: 1.15px;
+  }
 }
 
 .hero__box {
   display: flex;
-  margin-left: -38px;
-  padding-bottom: 45px;
+
+  @include for-phone {
+    display: none;
+  }
+
+  @include for-tablet {
+    padding-bottom: 28px;
+  }
+
+  @include for-desktop {
+    margin-left: -38px;
+    padding-bottom: 45px;
+  }
 }
 
 .hero__img-milk {
-  margin-right: 30px;
+  @include for-tablet {
+    width: 124px;
+    height: 126px;
+  }
+
+  @include for-desktop {
+    margin-right: 30px;
+    width: 188px;
+    height: 191px;
+  }
 }
 
 .hero__text {
-  width: 200px;
-  margin-top: 56px;
-  margin-bottom: 20px;
-
   font-family: DM Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 140%;
 
   color: #ffffff;
+
+  @include for-tablet {
+    width: 114px;
+    margin-top: 47px;
+    margin-bottom: 7px;
+    font-size: 8px;
+    line-height: 150%;
+  }
+
+  @include for-desktop {
+    width: 200px;
+    margin-top: 56px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 140%;
+  }
 }
 
 .hero__btn {
-  width: 26px;
-  height: 26px;
   border-radius: 50%;
   border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include for-tablet {
+    width: 18px;
+    height: 18px;
+  }
+
+  @include for-desktop {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+.hero__svg {
+  fill: #d41443;
+
+  @include for-tablet {
+    width: 7px;
+    height: 7px;
+  }
+
+  @include for-desktop {
+    width: 10px;
+    height: 10px;
+  }
 }
 
 .hero__img-icecream {
   position: absolute;
-  top: -63px;
-  left: 594px;
+
+  @include for-phone {
+    width: 171px;
+    height: 410px;
+    top: -103px;
+    left: 116px;
+  }
+
+  @include for-tablet {
+    width: 143px;
+    height: 336px;
+    top: -31px;
+    left: 380px;
+  }
+
+  @include for-desktop {
+    width: 236px;
+    height: 557px;
+    top: -63px;
+    left: 594px;
+  }
 }
 
 .hero__img-girl {
   position: absolute;
-  top: 262px;
-  left: 878px;
+
+  @include for-phone {
+    display: none;
+  }
+
+  @include for-tablet {
+    width: 168px;
+    height: 133px;
+    top: 173px;
+    left: 566px;
+  }
+
+  @include for-desktop {
+    width: 293px;
+    height: 232px;
+    top: 262px;
+    left: 878px;
+  }
 }
