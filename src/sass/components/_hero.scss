@@ -1,0 +1,167 @@
+.hero {
+  padding-top: 171px;
+  background-color: #ffb8ca;
+}
+
+.hero__container {
+  position: relative;
+}
+
+.hero__box-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 56px;
+}
+
+.hero__title {
+  position: relative;
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 37px;
+  line-height: 1.12;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+
+  width: 277px;
+
+  &::after {
+    content: '';
+    left: 360px;
+    top: -119px;
+    position: absolute;
+    border-radius: 50%;
+    width: 538px;
+    height: 538px;
+    background-color: #ffa5ba;
+  }
+}
+
+.hero__title--color {
+  font-size: 58px;
+  line-height: 0.9;
+
+  color: #d41443;
+}
+
+.hero__list {
+  display: flex;
+  margin-top: 25px;
+}
+
+.hero__item:not(:last-child) {
+  margin-right: 15px;
+}
+
+.hero__button {
+  width: 104px;
+  height: 40px;
+
+  color: #ffffff;
+  background-color: #d41443;
+  border-radius: 20px;
+  border: none;
+
+  &:hover,
+  &:focus {
+    background-color: #c7133e;
+  }
+}
+
+.hero__button--color {
+  width: 138px;
+  color: #d41443;
+  background-color: #ffffff;
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
+}
+
+.hero__item-right {
+  position: relative;
+  width: 74px;
+
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.3;
+  text-align: right;
+
+  color: #ffffff;
+
+  &:not(:last-child) {
+    margin-bottom: 38px;
+  }
+
+  &::before {
+    content: '';
+    left: 61px;
+    top: -30px;
+    position: absolute;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+  }
+}
+
+.hero__number {
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 46px;
+  line-height: 1.15px;
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #d41443;
+}
+
+.hero__box {
+  display: flex;
+  margin-left: -38px;
+  padding-bottom: 45px;
+}
+
+.hero__img-milk {
+  margin-right: 30px;
+}
+
+.hero__text {
+  width: 200px;
+  margin-top: 56px;
+  margin-bottom: 20px;
+
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+
+  color: #ffffff;
+}
+
+.hero__btn {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: none;
+}
+
+.hero__img-icecream {
+  position: absolute;
+  top: -63px;
+  left: 594px;
+}
+
+.hero__img-girl {
+  position: absolute;
+  top: 262px;
+  left: 878px;
+}
