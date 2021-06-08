@@ -6,13 +6,16 @@
 
     @include for-phone {
       max-width: 340px;
-      margin-bottom: 50px;
       margin-right: 66px;
       margin-left: 22px;
     }
 
     @include for-tablet {
       max-width: 340px;
+    }
+
+    @include for-desktop {
+      max-width: 480px;
     }
   
     .footer__info-one {
@@ -155,24 +158,26 @@
         letter-spacing: 0.02em;
       }
     }
-  .fuck {
+  .footer__container {
+    @include for-tablet {
     display: flex;
     justify-content: space-between;
-    margin-left: 434px;
     margin-top: 0px;
-  }
+    margin-bottom: 90px;
+    }
 
-// .footer__contacts {
-  
-//   // margin-bottom: 175px;
-//   // margin-left: 0px;
-// }
+    @include for-desktop {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0px;
+    margin-bottom: 97px;
+    }
+    
+  }
 
   .footer__socials-list {
     display: flex;
     justify-content: flex-end;
-    // padding-bottom: 46px;
-    // margin-left: 0px;
   }
 
   .footer__socials-item:not(:last-child) {
@@ -218,12 +223,21 @@
     font-size: 12px;
     line-height: 1.833;
     color: $text-color-secondary;
+    margin-top: 46px;
 
     @include for-phone {
       flex-wrap: wrap;
       font-size: 14px;
       line-height: 1, 857;
       margin-bottom: 40px;
+    }
+
+    @include for-tablet {
+      margin-top: 46px;
+    }
+
+    @include for-desktop {
+      margin-top: 50px;
     }
     
   }
@@ -271,6 +285,14 @@
       font-size: 14px;
       line-height: 1.5;
       letter-spacing: 0.02em;
+    }
+
+    @include for-tablet {
+      width: 480px;
+    }
+
+    @include for-desktop {
+      width: 480px;
     }
   }
 }
