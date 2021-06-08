@@ -1,0 +1,68 @@
+#button {
+  display: inline-block;
+  background-color: $bg-color-header_hero;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.5s, opacity 0.5s, visibility 0.5s;
+  transition: color 0.5s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  @include for-phone {
+    width: 25px;
+    height: 25px;
+    left: 91.5%;
+  }
+  @include for-tablet {
+    width: 33px;
+    height: 33px;
+    left: 95%;
+  }
+  @include for-desktop {
+    width: 50px;
+    height: 50px;
+    left: 92%;
+  }
+}
+#button::after {
+  content: '\f062';
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  color: $color-accent;
+  @include for-phone {
+    font-size: 1.3em;
+    line-height: 25px;
+  }
+  @include for-tablet {
+    font-size: 1.7em;
+    line-height: 33px;
+  }
+  @include for-desktop {
+    font-size: 2em;
+    line-height: 50px;
+  }
+}
+
+#button:hover {
+  cursor: pointer;
+  background-color: $bg-color-mobile-menu;
+  &::after {
+    color: $bg-color-btn-light_hover;
+  }
+}
+
+#button:active {
+  background-color: $bg-color-btn-contrast_hover;
+  &::after {
+    color: $bg-color-btn-light_hover;
+  }
+}
+
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
