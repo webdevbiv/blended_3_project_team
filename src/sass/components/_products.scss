@@ -265,3 +265,13 @@
 .products__svg-btn {
   fill: $bg-color-btn-contrast;
 }
+
+.products__button:hover,
+.products__button:focus {
+  background-color: $bg-color-btn-contrast_hover;
+  border: $bg-color-btn-contrast_hover;
+
+  &:hover .products__svg-btn {
+    fill: $bg-color-btn-light;
+  }
+}
