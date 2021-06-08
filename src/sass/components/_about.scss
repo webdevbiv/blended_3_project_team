@@ -45,11 +45,11 @@
   }
 
   @include for-tablet {
-    margin-bottom: 90px;
+    margin-bottom: 55px;
   }
 
   @include for-desktop {
-    margin-bottom: 100px;
+    margin-bottom: 60px;
   }
 }
 
@@ -106,15 +106,9 @@
 }
 
 .about__wrapper {
-  @include for-phone {
-  }
-
   @include for-tablet {
     display: flex;
     justify-content: center;
-  }
-
-  @include for-desktop {
   }
 }
 
