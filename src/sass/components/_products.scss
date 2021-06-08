@@ -1,10 +1,68 @@
-.products__list {
+.products-section {
+  @include for-phone {
+    padding-top: 121px;
+    padding-bottom: 98px;
+  }
+  @include for-tablet {
+    padding-top: 122px;
+    padding-bottom: 112px;
+  }
   @include for-desktop {
-    @include grid-list(30px);
+    padding-top: 127px;
+    padding-bottom: 119px;
+  }
+}
+
+.products__lable {
+  font-family: $font-family-secondary;
+  color: $text-color-decorative;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  letter-spacing: 0.04em;
+
+  @include for-phone {
+    font-size: 18px;
+    line-height: 1.167;
   }
 
   @include for-tablet {
+    font-size: 26px;
+    line-height: 1.154;
+  }
+  @include for-desktop {
+    font-size: 30px;
+    line-height: 1.133;
+  }
+}
+
+.products__title {
+  text-align: center;
+  @extend %title-section;
+
+  @include for-phone {
+    margin-bottom: 144px;
+  }
+  @include for-tablet {
+    font-size: 48px;
+    line-height: 1.146;
+    margin-bottom: 150px;
+  }
+  @include for-desktop {
+    font-size: 58px;
+    line-height: 1.138;
+    margin-bottom: 259px;
+  }
+}
+
+.products__list {
+  @include for-tablet {
     @include grid-list(20px);
+    margin-left: -20px;
+  }
+  @include for-desktop {
+    @include grid-list(30px);
+    margin-left: -30px;
   }
 }
 
@@ -16,49 +74,44 @@
     flex-basis: calc((100% - 3 * 30px) / 3);
   }
 }
-.products-section {
-  padding-top: 121px;
-  padding-bottom: 98px;
-}
-
-.products__lable {
-  font-family: $font-family-secondary;
-  color: $text-color-decorative;
-  font-size: 18px;
-  line-height: 1.167;
-  text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 15px;
-}
-.products__title {
-  @extend %title-section;
-  text-align: center;
-  margin-bottom: 144px;
-}
-
 .products__list-item {
   align-items: center;
   display: block;
-}
-
-.products__thumb {
   border-radius: 24px;
-  padding-right: 39px;
-  padding-left: 41px;
-  padding-top: 161px;
-  padding-bottom: 41px;
-  &:not(:last-child) {
-    margin-bottom: 121px;
+  text-align: center;
+  align-items: center;
+
+  @include for-phone {
+    width: 100%;
+    height: 100%;
+    padding-right: 39px;
+    padding-left: 41px;
+    padding-top: 161px;
+    padding-bottom: 41px;
+    &:not(:last-child) {
+      margin-bottom: 121px;
+    }
+  }
+  @include for-tablet {
+    min-width: 220px;
+    min-height: 485px;
+    padding-right: 11px;
+    padding-left: 11px;
+    padding-top: 152px;
+    padding-bottom: 40px;
+    margin-left: 20px;
   }
 
-  width: 280px;
-  height: 485px;
-
-  text-align: center;
-  // justify-content: space-between;
-  align-items: center;
+  @include for-desktop {
+    width: 329px;
+    min-height: 525px;
+    padding-right: 44px;
+    padding-left: 44px;
+    padding-top: 163px;
+    padding-bottom: 50px;
+    margin-left: 30px;
+  }
 }
-
 .products__name {
   @extend %title-products;
   text-align: center;
