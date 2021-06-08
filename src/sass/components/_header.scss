@@ -5,6 +5,22 @@
 .header__container {
   display: flex;
   justify-content: space-between;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @include for-phone {
+    top: 28px;
+  }
+
+  @include for-tablet {
+    top: 44px;
+  }
+
+  @include for-desktop {
+    top: 44px;
+  }
 }
 
 .header__nav {
@@ -54,6 +70,11 @@
 .header__link {
   text-decoration: none;
   color: #ffffff;
+
+  &:hover,
+  &:focus {
+    color: #d41443;
+  }
 }
 
 .header__link--current {
@@ -79,7 +100,8 @@
   border: none;
   cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: #ecebeb;
   }
 
