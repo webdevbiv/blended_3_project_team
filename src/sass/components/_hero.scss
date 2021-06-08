@@ -17,6 +17,9 @@
 
 .hero__container {
   position: relative;
+  @include for-phone {
+    overflow: hidden;
+  }
 }
 
 .hero__box-top {
