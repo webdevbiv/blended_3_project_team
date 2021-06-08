@@ -114,6 +114,8 @@
 }
 .products__name {
   text-align: center;
+  font-style: normal;
+  font-weight: normal;
   @extend %title-products;
 
   @include for-phone {
@@ -209,6 +211,13 @@
       width: 220px;
       height: 226px;
       background-image: url(../images/tablet/products/products_coffe.png);
+
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/tablet/products/products_coffe@2x.png);
+      }
     }
 
     @include for-desktop {
@@ -216,6 +225,13 @@
       height: 335px;
       top: -10%;
       background-image: url(../images/desktop/products/products_coffe.png);
+
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/desktop/products/products_coffe@2x.png);
+      }
     }
   }
   .products__milk_shakes & {
@@ -223,17 +239,38 @@
       width: 249px;
       height: 252px;
       background-image: url(../images/mobile/products/products_milkshake.png);
+
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/mobile/products/products_milkshake@2x.png);
+      }
     }
     @include for-tablet {
       width: 220px;
       height: 226px;
       background-image: url(../images/tablet/products/products_milkshakes.png);
+
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/tablet/products/products_milkshakes@2x.png);
+      }
     }
     @include for-desktop {
       width: 335px;
       height: 335px;
       top: -10%;
       background-image: url(../images/desktop/products/products_milkshake.png);
+
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/desktop/products/products_milkshake@2x.png);
+      }
     }
   }
 }
