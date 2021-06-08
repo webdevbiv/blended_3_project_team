@@ -3,6 +3,7 @@
   padding-right: 0;
 }
 .gallery {
+  display: block;
   @include for-phone {
     background-image: linear-gradient(
       to bottom,
