@@ -4,13 +4,8 @@
   @include for-phone {
     padding-top: 83px;
     padding-bottom: 75px;
-    // my
     height: 502px;
     position: relative;
-
-    // вариант петра
-    // padding-top: 193px;
-    // padding-bottom: 160px;
   }
 
   @include for-tablet {
@@ -28,21 +23,13 @@
   position: relative;
 
   @include for-phone {
-    // overflow: hidden;
-
-    // my
+    overflow: hidden;
     height: 100%;
   }
   @include for-tablet {
-    // overflow: hidden;
-
-    // my
     height: 100%;
   }
   @include for-desktop {
-    // overflow: hidden;
-
-    // my
     height: 100%;
   }
 }
@@ -50,20 +37,10 @@
 .hero__box-top {
   display: flex;
   justify-content: space-between;
-
-  // my
   height: 100%;
   width: 100%;
-
-  // @include for-tablet {
-  //   margin-bottom: 19px;
-  // }
-
-  // @include for-desktop {
-  //   margin-bottom: 56px;
-  // }
 }
-.title-sveta {
+.hero__title-thumb {
   @include for-phone {
     position: relative;
     padding-top: 110px;
@@ -79,7 +56,7 @@
     padding-top: 110px;
   }
 }
-.thmb-sveta {
+.hero__title-thumb-absolute {
   @include for-phone {
     position: absolute;
     top: 110px;
@@ -110,7 +87,6 @@
   color: #ffffff;
 
   @include for-desktop {
-    // position: absolute;
     font-size: 38px;
     line-height: 1.158;
   }
@@ -315,8 +291,6 @@
   }
 
   @include for-desktop {
-    // margin-left: -38px;
-    // padding-bottom: 45px;
   }
 }
 
@@ -329,7 +303,6 @@
   }
 
   @include for-desktop {
-    // margin-right: 30px;
     width: 188px;
     height: 191px;
     left: 77px;
@@ -410,13 +383,9 @@
   @include for-phone {
     width: 171px;
     height: 410px;
-    // top: -103px;
-    // left: 116px;
 
-    // my
     bottom: -73px;
     right: 32px;
-    // z-index: 99;
   }
 
   @include for-tablet {
@@ -476,7 +445,6 @@
   @include for-tablet {
     width: 168px;
     height: 133px;
-    // top: 173px;
     left: 566px;
     bottom: 0;
   }
