@@ -111,10 +111,13 @@
     text-align: center;
     width: 80px;
     height: 16px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 25px;
     border-radius: 4px;
     background-color: $bg-color-card-produсt-ice_coffee;
     font-family: $font-family-main;
+    font-weight: 500;
     font-size: 12px;
     font-style: medium;
     line-height: 1.83;
@@ -135,12 +138,15 @@
     text-align: center;
     width: 130px;
     height: 16px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 25px;
     border-radius: 4px;
     background-color: $bg-color-card-produсt-milk_shakes;
     font-family: $font-family-main;
     font-size: 12px;
     font-style: medium;
+    font-weight: 500;
     line-height: 1.83;
     letter-spacing: 4%;
     vertical-align: center;
@@ -155,19 +161,20 @@
   }
   &__btn {
     display: block;
+    @include for-tablet {
+      display: flex;
+    }
   }
   &__btn-items {
-    width: 160px;
-    height: 44px;
     margin-left: auto;
     margin-right: auto;
-    @media screen and (max-width: 767px) {
+    @include for-tablet {
       text-align: center;
     }
   }
 
   &__btn-items:not(:last-child) {
-    @media screen {
+    @include for-tablet {
       margin-bottom: 10px;
     }
   }
