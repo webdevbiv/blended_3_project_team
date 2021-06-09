@@ -70,8 +70,15 @@
   }
 
   .footer__socials-item:not(:last-child) {
-    margin-right: 30px;
-    margin-top: 0;
+    @include for-phone {
+      margin-right: 28px;
+    }
+    @include for-tablet {
+      margin-right: 30px;
+    }
+    @include for-desktop {
+      margin-right: 26px;
+    }
   }
 
   .footer__social-sprite {
@@ -108,11 +115,18 @@
     height: 32px;
     border-radius: 50%;
     background-color: $footer-socials-icon-bg;
+    @include for-desktop {
+      width: 34px;
+      height: 34px;
+    }
   }
 
   .footer__social-icon {
     font-size: 20px;
     color: $footer-socials-icon-cl;
+    @include for-desktop {
+      font-size: 22px;
+    }
   }
 
   .footer__contacts {
