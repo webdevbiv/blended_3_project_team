@@ -1,13 +1,10 @@
 .footer {
-    background-color: $bg-color-section-contrast;
-
+  background-color: $bg-color-section-contrast;
 
   .footer__info {
-
     @include for-phone {
-      max-width: 340px;
-      margin-right: 66px;
-      margin-left: 22px;
+      max-width: 234px;
+      margin-bottom: 43px;
     }
 
     @include for-tablet {
@@ -17,46 +14,53 @@
     @include for-desktop {
       max-width: 480px;
     }
-  
+
     .footer__info-one {
       font-family: $font-family-secondary;
       text-transform: uppercase;
       color: $text-color-decorative;
-  
+
       @include for-phone {
-        max-width: 340px;
-        margin-bottom: 0;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 1.667;
+        margin-bottom: 17px;
+        //max-width: 340px;
       }
-  
+
       @include for-tablet {
         font-size: 26px;
         line-height: 1.145;
         padding-bottom: 16px;
       }
-  
+
       @include for-desktop {
         font-size: 30px;
         line-height: 1.133;
         margin-bottom: 15px;
       }
     }
-  
+
     .footer__info-two {
       font-family: $font-family-secondary;
       color: $color-accent;
       text-transform: uppercase;
-  
+
       @include for-phone {
+        font-style: normal;
+        font-weight: normal;
         font-size: 34px;
-        letter-spacing: 0.06em;
+        line-height: 1.147;
+        letter-spacing: 0.04em;
       }
-  
+
       @include for-tablet {
         font-size: 48px;
         line-height: 1.147;
         letter-spacing: 0.04em;
       }
-  
+
       @include for-desktop {
         font-size: 58px;
         line-height: 1.138;
@@ -65,123 +69,16 @@
     }
   }
 
-    .footer__socials-item:not(:last-child) {
+  .footer__socials-item:not(:last-child) {
+    @include for-phone {
+      margin-right: 28px;
+    }
+    @include for-tablet {
       margin-right: 30px;
     }
-  
-    .footer__social-sprite {
-      display: flex;
-      width: 34px;
-      height: 34px;
-      color: $text-color-main;
-      background-color: $text-color-decorative;
-      border-radius: 50%;
-      justify-content: center;
-      align-items: center;
-      transition-property: background-color;
-      transition: 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
-      &:hover,
-      &:focus {
-        background-color: $color-accent;
-        color: $text-color-main;
-      }
-    }
-  
-    .footer__social-sprite {
-      @include for-phone {
-        width: 32px;
-        height: 32px;
-        margin-top: 43px;
-      }
-    }
-  
-    .footer__social-icon {
-      width: 20px;
-      height: 20px;
-      fill: currentColor;
-    }
-  
-    .footer__contacts-phone {
-      display: flex;
-      justify-content: flex-end;
-      font-weight: 700;
-      font-size: 12px;
-      line-height: 1.833;
-      color: $text-color-secondary;
-  
-      @include for-phone {
-        flex-wrap: wrap;
-        font-size: 14px;
-        line-height: 1, 857;
-      }
-    }
-  
-    .footer__contacts-link {
-      margin-left: 3px;
-      color: $color-accent;
-      text-decoration: none;
-    }
-  
-    .footer__c {
-    margin-left: auto;
-    margin-right: auto;
-      border-top: 1px solid #e1e1e1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      @include for-phone {
-        min-height: 73px;
-      }
-  
-      @include for-tablet {
-        min-height: 83px;
-      }
-  
-      @include for-desktop {
-        min-height: 49px;
-        
-      }
-    }
-    .footer__c-text {
-      width: 180px;
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 1.5;
-      text-align: center;
-      color: $text-color-additional;
-      padding: 0 20px;
-  
-      @include for-phone {
-        width: 316px;
-        font-size: 14px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-      }
-    }
-  .footer__container {
-    @include for-tablet {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 0px;
-    margin-bottom: 90px;
-    }
-
     @include for-desktop {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 0px;
-    margin-bottom: 97px;
+      margin-right: 26px;
     }
-    
-  }
-
-  .footer__socials-list {
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  .footer__socials-item:not(:last-child) {
-    margin-right: 30px;
   }
 
   .footer__social-sprite {
@@ -206,40 +103,63 @@
     @include for-phone {
       width: 32px;
       height: 32px;
-      
+      margin-top: 43px;
+    }
+  }
+
+  .footer__socials-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: $footer-socials-icon-bg;
+    @include for-desktop {
+      width: 34px;
+      height: 34px;
     }
   }
 
   .footer__social-icon {
-    width: 20px;
-    height: 20px;
-    fill: currentColor;
+    font-size: 20px;
+    color: $footer-socials-icon-cl;
+    @include for-desktop {
+      font-size: 22px;
+    }
+  }
+
+  .footer__contacts {
+    margin-bottom: 43px;
   }
 
   .footer__contacts-phone {
     display: flex;
-    justify-content: flex-wrap;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 1.833;
+    justify-content: flex-end;
     color: $text-color-secondary;
-    margin-top: 46px;
 
     @include for-phone {
       flex-wrap: wrap;
       font-size: 14px;
-      line-height: 1, 857;
-      margin-bottom: 40px;
+      font-style: normal;
+      font-weight: bold;
+      line-height: 1.86;
+      text-align: right;
     }
-
     @include for-tablet {
-      margin-top: 46px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 1.86;
+      text-align: right;
     }
-
     @include for-desktop {
-      margin-top: 50px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 1.86;
+      letter-spacing: 0.02em;
     }
-    
   }
 
   .footer__contacts-link {
@@ -248,52 +168,137 @@
     text-decoration: none;
   }
 
-  .footer__c {
+  .footer__container {
+    @include for-tablet {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 0px;
+      margin-bottom: 90px;
+    }
+
+    @include for-desktop {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 0px;
+      margin-bottom: 97px;
+    }
+  }
+
+  .footer__socials-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    @include for-phone {
+      margin-bottom: 55px;
+    }
+    @include for-tablet {
+      margin-bottom: 46px;
+    }
+  }
+
+  .footer__social-sprite {
+    display: flex;
+    width: 34px;
+    height: 34px;
+    color: $text-color-main;
+    background-color: $text-color-decorative;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition-property: background-color;
+    transition: 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    &:hover,
+    &:focus {
+      background-color: $color-accent;
+      color: $text-color-main;
+    }
+  }
+
+  .footer__social-sprite {
+    @include for-phone {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  // .footer__contacts-phone {
+  //   display: flex;
+  //   justify-content: flex-wrap;
+  //   font-weight: 700;
+  //   font-size: 12px;
+  //   line-height: 1.833;
+  //   color: $text-color-secondary;
+  //   margin-top: 46px;
+
+  //   @include for-phone {
+  //     flex-wrap: wrap;
+  //     font-size: 14px;
+  //     line-height: 1, 857;
+  //     margin-bottom: 40px;
+  //   }
+
+  //   @include for-tablet {
+  //     margin-top: 46px;
+  //   }
+
+  //   @include for-desktop {
+  //     margin-top: 50px;
+  //   }
+  // }
+
+  .footer__contacts-link {
+    margin-left: 3px;
+    color: $color-accent;
+    text-decoration: none;
+  }
+
+  .footer-copy-rights {
     border-top: 1px solid #e1e1e1;
     display: flex;
     justify-content: center;
     align-items: center;
     @include for-phone {
-      min-height: 73px;
     }
 
     @include for-tablet {
-      min-height: 83px;
-
     }
 
     @include for-desktop {
-      min-height: 49px;
-      
     }
   }
-  .footer__c-text {
-    width: 180px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.5;
-    text-align: center;
-    color: $text-color-additional;
-    padding: 0 20px;
-
+  .footer-copy-rights .container {
     @include for-phone {
-      padding-top: 20px;
-      padding-right: 50px;
-      padding-left: 50px;
-      padding-bottom: 20px;
-      width: 316px;
-      font-size: 14px;
-      line-height: 1.5;
+      padding: 25px 0 25px 0;
+      max-width: 140px;
+    }
+    @include for-tablet {
+      padding: 23px 0 23px 0;
+      max-width: 276px;
+    }
+    @include for-desktop {
+      padding: 10px 0 10px 0;
+      max-width: 276px;
+    }
+  }
+  .footer-copy-rights__text {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+
+    color: $text-color-additional;
+    @include for-phone {
+      line-height: 1.52;
+      text-align: center;
+    }
+
+    @include for-tablet {
+      line-height: 1.86;
       letter-spacing: 0.02em;
     }
 
-    @include for-tablet {
-      width: 480px;
-    }
-
     @include for-desktop {
-      width: 480px;
+      line-height: 1.86;
+      letter-spacing: 0.02em;
     }
   }
 }
-

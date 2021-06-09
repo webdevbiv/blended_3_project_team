@@ -37,12 +37,26 @@
 
 %title-card-contacts {
   font-family: $font-family-main;
-  font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 1, 86;
   letter-spacing: 0.04em;
   color: $text-color-main;
+}
+
+%text-header-nav {
+  font-family: $font-family-main;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.69;
+  color: $text-color-main;
+}
+
+%text-btn {
+  font-family: $font-family-main;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
 }
 
 %text-mobile-menu {
