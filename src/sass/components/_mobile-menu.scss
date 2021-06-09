@@ -9,7 +9,7 @@
   display: flex;
   flex-direction: column;
 
-  padding: 48px 40px;
+  padding: 60px 20px;
 
   background-color: #e17992;
 
@@ -19,7 +19,6 @@
   font-size: 40px;
   line-height: 1.18;
   letter-spacing: 0.02em;
-
   transition: 250ms;
 
   &.is-open {
@@ -38,4 +37,21 @@
 
 .mobile-menu_link-current {
   color: #d41443;
+}
+.mobile-menu__btn-close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: #e17992;
+  top: 25px;
+  right: 20px;
+  padding: 0;
+  border: none;
+  height: 14px;
+  top: 25px;
+  right: 20px;
+}
+.mobile-menu__svg {
+  fill: #111010;
 }
