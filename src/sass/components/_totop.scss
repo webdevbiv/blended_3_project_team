@@ -49,15 +49,19 @@
 
 #button:hover {
   cursor: pointer;
+  @include trans(background-color);
   background-color: $bg-color-mobile-menu;
   &::after {
+    @include trans(color);
     color: $bg-color-btn-light_hover;
   }
 }
 
 #button:active {
+  @include trans(background-color);
   background-color: $bg-color-btn-contrast_hover;
   &::after {
+    @include trans(color);
     color: $bg-color-btn-light_hover;
   }
 }

@@ -192,6 +192,7 @@
     line-height: 1.31;
     text-align: center;
     vertical-align: center;
+    @include trans(background-color);
     &:hover,
     &:focus {
       cursor: pointer;
@@ -220,6 +221,7 @@
     line-height: 1.31;
     text-align: center;
     vertical-align: center;
+    @include trans(background-color);
     &:hover,
     &:focus {
       cursor: pointer;

@@ -153,6 +153,7 @@
 .hero__button--color {
   color: $color-accent;
   background: $text-color-main;
+  @include trans(background);
   @include for-phone {
     width: 89px;
     height: 24px;
@@ -215,18 +216,22 @@
   border: none;
   border-radius: 50%;
   @extend %center;
+  @include trans(background-color);
   @include for-desktop {
+    @include trans(background-color);
     width: 26px;
     height: 26px;
   }
   &:hover,
   &:focus {
+    @include trans(background-color);
     cursor: pointer;
     fill: $bg-color-btn-light;
     background-color: $bg-color-btn-contrast_hover;
   }
   &:hover .hero__svg,
   &:focus .hero__svg {
+    @include trans(fill);
     fill: $bg-color-btn-light;
   }
 }

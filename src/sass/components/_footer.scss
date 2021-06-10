@@ -116,6 +116,7 @@
     height: 32px;
     border-radius: 50%;
     background-color: $footer-socials-icon-bg;
+    @include trans(background-color);
     &:hover,
     &:focus {
       background-color: $color-accent;

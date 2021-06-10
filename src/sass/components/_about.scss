@@ -206,6 +206,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  @include trans(background-color);
 
   @include for-phone {
     font-size: 14px;
@@ -225,6 +226,7 @@
 
 .about__btn:hover,
 .about__btn:focus {
+  @include trans(background-color);
   background-color: $bg-color-btn-light_hover;
 }
 

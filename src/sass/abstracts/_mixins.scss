@@ -47,3 +47,8 @@
 // .li(задать класс для карточек) {
 //   @include grid-item(колонки, марджин между колонками);
 // }
+@mixin trans($element) {
+  transition: #{$element} $duration $cubic-bezier;
+}
+
+//@include trans(fill);

@@ -139,8 +139,6 @@
   position: absolute;
   content: '';
   display: flex;
-  width: 100%;
-  height: auto;
   background-repeat: no-repeat;
   background-size: contain;
 
@@ -153,8 +151,8 @@
 
   .products__ice-cream & {
     @include for-phone {
-      width: 249px;
-      height: 252px;
+      display: block;
+      max-width: 100%;
       background-image: url(../images/mobile/products/products_icecream.png);
 
       @media (min-device-pixel-ratio: 2),
@@ -344,6 +342,8 @@
   margin-right: auto;
   margin-left: auto;
   padding: 0 0;
+  @include trans(background-color);
+
   &:hover,
   &:focus {
     cursor: poinetr;
@@ -356,11 +356,13 @@
 
 .products__button:hover,
 .products__button:focus {
+  @include trans(background-color);
   background-color: $bg-color-btn-contrast_hover;
   border: $bg-color-btn-contrast_hover;
   cursor: pointer;
 
   &:hover .products__svg-btn {
+    @include trans(fill);
     fill: $bg-color-btn-light;
   }
 }

@@ -64,7 +64,7 @@
 .header__link {
   text-decoration: none;
   color: $text-color-main;
-
+  @include trans(color);
   &:hover,
   &:focus {
     color: $color-accent;
@@ -90,7 +90,7 @@
   border-radius: 22px;
   border: none;
   cursor: pointer;
-
+  @include trans(background-color);
   &:hover,
   &:focus {
     background-color: #ecebeb;
