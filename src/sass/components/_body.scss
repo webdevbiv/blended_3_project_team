@@ -5,4 +5,7 @@
   font-size: 14px;
   letter-spacing: normal;
   color: $text-color-secondary;
+  @media (max-width: 330px) {
+    overflow: hidden;
+  }
 }
