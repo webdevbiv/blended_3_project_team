@@ -119,10 +119,9 @@
   &__title-1 {
     display: flex;
     justify-content: center;
-    text-align: center;
+    align-items: center;
     width: 80px;
     height: 15px;
-    margin-left: auto;
     margin-right: auto;
     margin-bottom: 25px;
     border-radius: 4px;
@@ -130,15 +129,13 @@
     font-family: $font-family-main;
     font-weight: 500;
     font-size: 12px;
-    font-style: medium;
-    line-height: 1.3;
-    letter-spacing: 4%;
-    vertical-align: center;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
     color: $text-color-main;
+
     @include for-tablet {
       font-size: 16px;
-      font-style: medium;
-      line-height: 1.88;
+      line-height: 1.86;
       width: 73px;
       height: 28px;
     }
@@ -146,26 +143,24 @@
   &__title-2 {
     display: flex;
     justify-content: center;
-    text-align: center;
+    align-items: center;
     width: 130px;
     height: 16px;
-    margin-left: auto;
     margin-right: auto;
     margin-bottom: 25px;
     border-radius: 4px;
     background-color: $bg-color-card-produсt-milk_shakes;
     font-family: $font-family-main;
     font-size: 12px;
-    font-style: medium;
     font-weight: 500;
-    line-height: 1.3;
-    letter-spacing: 4%;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
     vertical-align: center;
     color: $text-color-main;
+
     @include for-tablet {
       font-size: 16px;
-      font-style: medium;
-      line-height: 1.88;
+      line-height: 1.86;
       width: 138px;
       height: 28px;
     }
