@@ -111,6 +111,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     width: 32px;
     height: 32px;
     border-radius: 50%;
@@ -120,7 +121,8 @@
       height: 34px;
     }
   }
-
+  .footer__social-icon__position {
+  }
   .footer__social-icon {
     font-size: 20px;
     color: $footer-socials-icon-cl;
