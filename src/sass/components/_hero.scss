@@ -11,7 +11,7 @@
   }
 
   @include for-desktop {
-    padding-top: 108px;
+    padding-top: 95px;
   }
   & .container {
     @include for-tablet {
@@ -124,6 +124,15 @@
   border: none;
   border-radius: 20px;
   background: $color-accent;
+  @include for-phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 62px;
+    height: 24px;
+    font-size: 9px;
+    line-height: 1.25;
+  }
   @include for-desktop {
     width: 102px;
     height: 40px;
@@ -144,6 +153,10 @@
 .hero__button--color {
   color: $color-accent;
   background: $text-color-main;
+  @include for-phone {
+    width: 89px;
+    height: 24px;
+  }
   @include for-desktop {
     width: 138px;
     height: 40px;
