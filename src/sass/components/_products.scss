@@ -152,7 +152,8 @@
   .products__ice-cream & {
     @include for-phone {
       display: block;
-      max-width: 100%;
+      width: 249px;
+      height: 252px;
       background-image: url(../images/mobile/products/products_icecream.png);
 
       @media (min-device-pixel-ratio: 2),
@@ -164,6 +165,7 @@
     }
 
     @include for-tablet {
+      display: block;
       width: 220px;
       height: 226px;
       background-image: url(../images/tablet/products/products_icecream.png);
