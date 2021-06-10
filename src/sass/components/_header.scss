@@ -52,6 +52,8 @@
     margin-top: 50px;
     display: flex;
     justify-content: space-between;
+    position: relative;
+    z-index: 3;
   }
 }
 
@@ -80,6 +82,8 @@
   color: $color-accent;
   background-color: $bg-color-btn-light;
   margin-top: 37px;
+  position: relative;
+  z-index: 8;
 
   width: 160px;
   height: 44px;
