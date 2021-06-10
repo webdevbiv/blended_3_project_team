@@ -3,11 +3,10 @@
   z-index: 100;
   top: 0;
   right: -100%;
-  width: 250px;
+  width: 100%;
   height: 100%;
+  @extend %column;
   justify-content: start;
-  display: flex;
-  flex-direction: column;
   padding: 60px 20px;
   background-color: $bg-color-mobile-menu;
   transition: 250ms;
@@ -16,27 +15,28 @@
     right: 0;
   }
 
+  @include for-tablet {
+    width: 42%;
+  }
+
   @include for-desktop {
     display: none;
   }
 }
 
 .mobile-menu__btn {
-  margin-bottom: 20px;
-  display: inline-block;
+  @extend %btn;
+  @extend %center;
   width: 210px;
+  line-height: 1.312;
+  margin-bottom: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
   font-family: $font-family-main;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.312;
   color: $color-accent;
-  @extend %btn;
-  padding-left: 50px;
-  padding-right: 50px;
   background-color: $bg-color-btn-light;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .mobile-menu__item {
@@ -44,17 +44,17 @@
   &::before {
     position: absolute;
     content: '';
-    display: inline;
+    display: block;
     width: 100%;
-    border-bottom: solid 2px;
+    border-bottom: solid 1px;
     border-color: rgba(255, 255, 255, 0.06);
   }
   &:last-child::after {
     position: absolute;
     content: '';
-    display: inline-block;
+    display: block;
     width: 100%;
-    border-bottom: solid 2px;
+    border-bottom: solid 1px;
     border-color: rgba(255, 255, 255, 0.06);
   }
 }
@@ -71,24 +71,20 @@
   }
 }
 
-.mobile-menu__item .mobile-menu__link-current {
+.mobile-menu__link-current {
   color: $color-accent;
 }
 
 .mobile-menu__btn-close {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %center;
   position: absolute;
   background-color: $bg-color-mobile-menu;
-  top: 25px;
-  right: 20px;
+  top: 10px;
+  right: 13px;
   padding: 0;
   border: none;
-  height: 14px;
-  top: 25px;
-  right: 20px;
-  &:focus .mobile-menu__svg {
+  &:focus .mobile-menu__svg,
+  &:hover .mobile-menu__svg {
     fill: $color-accent;
   }
 }
