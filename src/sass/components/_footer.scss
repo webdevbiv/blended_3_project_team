@@ -116,11 +116,16 @@
     height: 32px;
     border-radius: 50%;
     background-color: $footer-socials-icon-bg;
+    &:hover,
+    &:focus {
+      background-color: $color-accent;
+    }
     @include for-desktop {
       width: 34px;
       height: 34px;
     }
   }
+
   .footer__social-icon__position {
   }
   .footer__social-icon {

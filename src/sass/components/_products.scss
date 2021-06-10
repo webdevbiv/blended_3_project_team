@@ -344,6 +344,10 @@
   margin-right: auto;
   margin-left: auto;
   padding: 0 0;
+  &:hover,
+  &:focus {
+    cursor: poinetr;
+  }
 }
 
 .products__svg-btn {
@@ -354,6 +358,7 @@
 .products__button:focus {
   background-color: $bg-color-btn-contrast_hover;
   border: $bg-color-btn-contrast_hover;
+  cursor: pointer;
 
   &:hover .products__svg-btn {
     fill: $bg-color-btn-light;

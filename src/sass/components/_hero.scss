@@ -219,14 +219,24 @@
     width: 26px;
     height: 26px;
   }
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    fill: $bg-color-btn-light;
+    background-color: $bg-color-btn-contrast_hover;
+  }
+  &:hover .hero__svg,
+  &:focus .hero__svg {
+    fill: $bg-color-btn-light;
+  }
 }
+
 .hero__svg {
   fill: #d7224d;
   @include for-tablet {
     width: 10px;
     height: 10px;
   }
-
   @include for-desktop {
     width: 13px;
     height: 13px;

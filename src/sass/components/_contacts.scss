@@ -120,7 +120,7 @@
     justify-content: center;
     text-align: center;
     width: 80px;
-    height: 16px;
+    height: 15px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 25px;
@@ -130,7 +130,7 @@
     font-weight: 500;
     font-size: 12px;
     font-style: medium;
-    line-height: 1.83;
+    line-height: 1.3;
     letter-spacing: 4%;
     vertical-align: center;
     color: $text-color-main;
@@ -157,7 +157,7 @@
     font-size: 12px;
     font-style: medium;
     font-weight: 500;
-    line-height: 1.83;
+    line-height: 1.3;
     letter-spacing: 4%;
     vertical-align: center;
     color: $text-color-main;
@@ -180,6 +180,7 @@
     margin-bottom: 10px;
     width: 161px;
     height: 44px;
+    border: none;
     border-radius: 22px;
     background-color: #d41342;
     border-color: #d41342;
@@ -190,6 +191,11 @@
     line-height: 1.31;
     text-align: center;
     vertical-align: center;
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      background-color: $bg-color-btn-contrast_hover;
+    }
     @include for-tablet {
       margin-bottom: 0;
       margin-right: 15px;
@@ -206,12 +212,18 @@
     background-color: #fff;
     border-color: #fff;
     color: #d41342;
+    border: none;
     font-family: DM Sans;
     font-style: Bold;
     font-size: 16px;
     line-height: 1.31;
     text-align: center;
     vertical-align: center;
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      background-color: $bg-color-btn-light_hover;
+    }
     @include for-tablet {
       width: 161px;
     }
