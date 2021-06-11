@@ -1,0 +1,36 @@
+<div data-modal class="backdrop is-hidden">
+  <div class="modal">
+    <button data-modal-close class="btn-close">
+      <svg class="btn-close__svg" width="30" height="30">
+        <use href="./images/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <h2 class="modal__title">Leave your details, we will call you back</h2>
+
+    <form>
+      <div class="form-field">
+        <label class=form-field__label for="name">Name</label>
+        <input class=form-field__input type="text" name="name" id="name" autofocus autocomplete="name" />
+      </div>
+
+      <div class="form-field">
+        <label class=form-field__label for="tel">Phone Number</label>
+        <input class=form-field__input type="tel" name="tel" id="tel" autocomplete="tel" />
+
+      </div>
+
+      <div class="form-field">
+        <label class=form-field__label for="mail">E-mail</label>
+        <input class=form-field__input type="email" name="mail" id="mail" autocomplete="email" />
+
+      </div>
+
+      <div class="form-field form-field__comment">
+        <label class=form-field__label for="comment">Comment</label>
+        <textarea class="form-field__input--comment" placeholder="Enter text" name="coment" id="comment"></textarea>
+      </div>
+
+      <button class="btn__modal-submit" type="submit">submit</button>
+    </form>
+  </div>
+</div>
