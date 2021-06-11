@@ -30,7 +30,7 @@
                     rhoncus orci in imperdiet placerat.
                     Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt. <br><br> Aliquam erat volutpat. Aenean accumsan.
                 </p>
-                <button class="about__btn" type="button">
+                <button class="about__btn" type="button" data-menu-buttons>
                     Read more
                     <svg class="about__svg" width="5" height="8">
                         <use href="./images/sprite.svg#icon-arrow"></use>
@@ -38,5 +38,22 @@
                 </button>
             </div>
         </div>
+    </div>
+    <div class="about__backdrop" data-menus>
+        <div class="about__modal">
+            <button class="about__btn-close" type="button" data-menu-closes>
+                <svg class="about__svg-close" width="15" height="15">
+                    <use href="./images/sprite.svg#icon-close"></use>
+                </svg>
+            </button>
+            <h3 class="about__title">какоето описание</h3>
+            <p class="about__modal-text">
+                Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
+                cursus, faucibus lorem eget, egestas eros.
+                Maecenas eleifend erat at justo fringilla
+                justo fringilla.
+            </p>
+        </div>
+    
     </div>
 </section>
