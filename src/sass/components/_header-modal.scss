@@ -123,16 +123,15 @@
 .btn__modal-submit {
   @extend %btn;
   @extend %center;
-  width: 210px;
+  // width: 210px;
   line-height: 1.312;
   margin: 0 auto;
-  padding-left: 50px;
-  padding-right: 50px;
-  font-family: $font-family-secondary;
-  font-size: 18px;
-  line-height: 1.17;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-family: $font-family-main;
+  font-weight: 700;
+  font-size: 16px;
   color: $color-accent;
-  text-transform: uppercase;
   background-color: $bg-color-btn-light;
   border: 1px solid rgba(33, 33, 33, 0.2);
 
