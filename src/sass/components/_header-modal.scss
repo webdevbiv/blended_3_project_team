@@ -97,29 +97,31 @@
   }
 }
 
-.btn-close {
+.mobile-menu__btn-close {
   z-index: 100;
   position: absolute;
   @extend %center;
-  background-color: $bg-color-section-contrast;
+  //background-color: $bg-color-section-contrast;
   top: 10px;
   right: 10px;
   border: none;
-
-  &:hover {
+  @include trans(fill);
+  &:hover,
+  &:focus {
     cursor: pointer;
   }
 }
 
-.btn-close__svg {
+.mobile-menu__svg {
   fill: $text-color-decorative;
   transition: fill 250ms $cubic-bezier;
 
-  .btn-close:hover &,
-  .btn-close:focus & {
+  .mobile-menu__btn-close:hover &,
+  .mobile-menu__btn-close:focus & {
     fill: $color-accent;
   }
 }
+
 .btn__modal-submit {
   @extend %btn;
   @extend %center;
@@ -134,6 +136,7 @@
   color: $color-accent;
   background-color: $bg-color-btn-light;
   border: 1px solid rgba(33, 33, 33, 0.2);
+  @include trans(border);
 
   &:focus,
   &:hover {

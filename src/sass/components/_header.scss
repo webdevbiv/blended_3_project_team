@@ -108,6 +108,10 @@
   width: 20px;
   height: 15px;
   background-color: $bg-color-header_hero;
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
 
   @include for-phone {
     top: 25px;
