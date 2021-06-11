@@ -62,7 +62,8 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 10px;
   transition: border 250ms $cubic-bezier;
-
+  @include trans(outline);
+  @include trans(border-color);
   &:focus,
   &:hover {
     outline: none;
@@ -81,6 +82,7 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 10px;
   transition: border 250ms $cubic-bezier;
+  @include trans(border-color);
 
   &:focus,
   &:hover {
@@ -141,5 +143,21 @@
   &:focus,
   &:hover {
     border: 1px solid $color-accent;
+  }
+}
+
+.mobile-menu__btn {
+  @include trans(background);
+  &:hover,
+  &:focus {
+    background: $bg-color-section-contrast;
+  }
+}
+
+.mobile-menu__link {
+  @include trans(color);
+  &:hover,
+  &:focus {
+    color: $color-accent;
   }
 }
