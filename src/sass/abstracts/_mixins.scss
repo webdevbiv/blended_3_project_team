@@ -1,6 +1,6 @@
 // Для размеров экранов
 @mixin for-phone {
-  @media (max-width: 767.99px) {
+  @media (max-width: 767.9px) {
     @content;
   }
 }
