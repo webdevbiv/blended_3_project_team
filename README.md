@@ -1,49 +1,19 @@
-# parcel-project-template
+This project is a simple HTML-Sass project that showcases an IceCream website. It utilizes Parcel as the bundler and has a few dependencies to enhance its functionality. Below, you will find instructions on how to set up and run the project.
 
-## Зависимости
+## Technologies Used
 
-На компьютере должена быть установлена LTS-версия [Node.js](https://nodejs.org/en/).
+- **HTML:** The project's structure and layout are built using HTML.
 
-## Перед началом работы
+- **Sass:** Sass is used as the CSS preprocessor for this project, allowing the use of nested styles, variables, and mixins to write more maintainable and organized stylesheets.
 
-Один раз на проект установить все зависимости.
+- **Parcel Bundler:** Parcel is used as the build tool to bundle the project's assets and dependencies. It simplifies the development workflow by handling asset bundling, hot-reloading, and more.
 
-```shell
-npm ci
-```
+- **posthtml-include:** The plugin posthtml-include is used to include HTML fragments from separate files. This helps in modularizing the code and improves collaboration in team projects.
 
-### Разработка
+- **jQuery:** jQuery, a popular JavaScript library, is included to simplify DOM manipulation and add interactivity to the website.
 
-Запустить режим разработки.
+- **animate.css:** The animate.css library is used to add animations to certain elements on the website, making it more visually appealing.
 
-```shell
-npm run dev
-```
+- **Font Awesome:** The project utilizes Font Awesome icons to enhance the visual representation of various elements.
 
-Во вкладке браузера перейти по адресу [http://localhost:1234](http://localhost:1234).
-
-### Деплой
-
-Сборка будет автоматически собирать и деплоить продакшен версию проекта на GitHub Pages, в ветку
-`gh-pages`, каждый раз когда обновляется ветка `main`. Например, после прямого пуша или принятого
-пул-реквеста. Для этого необходимо в файле `package.json` отредактировать поле `homepage` и скрипт
-`build`, заменив `имя_пользователя` и `имя_репозитория` на свои.
-
-```json
-"homepage": "https://имя_пользователя.github.io/имя_репозитория",
-"scripts": {
-  "build": "parcel build src/*.html --public-url /имя_репозитория/"
-},
-```
-
-Через какое-то время живую страницу можно будет посмотреть по адресу указанному в отредактированном
-свойстве `homepage`, например
-[https://goitacademy.github.io/parcel-project-template](https://goitacademy.github.io/parcel-project-template).
-
-## Файлы и папки
-
-- Все паршалы файлов стилей должны лежать в папке `src/sass` и импортироваться в
-  `src/sass/main.scss`
-- Изображения добавляйте в папку `src/images`, заранее оптимизировав их. Сборщик просто копирует
-  используемые изображения чтобы не нагружать систему оптимизацией картинок, так как на слабых
-  компьютерах это может занять прилично времени.
+- **slick-carousel:** The slick-carousel library is used to create a responsive and interactive testimonials slider.
