@@ -281,11 +281,11 @@
     }
     @include for-tablet {
       padding: 23px 0 23px 0;
-      max-width: 276px;
+      max-width: 300px;
     }
     @include for-desktop {
       padding: 10px 0 10px 0;
-      max-width: 276px;
+      max-width: 300px;
     }
   }
   .footer-copy-rights__text {
