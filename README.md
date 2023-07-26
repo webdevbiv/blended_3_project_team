@@ -1,3 +1,5 @@
+# IceCream Project
+
 This project is a simple HTML-Sass project that showcases an IceCream website. It utilizes Parcel as the bundler and has a few dependencies to enhance its functionality. Below, you will find instructions on how to set up and run the project.
 
 ## Technologies Used
